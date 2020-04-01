@@ -1,0 +1,24 @@
+@font-face {
+    font-family: SF-Pro;
+    src: url(../fonts/SF-Pro-Display-Regular.otf)
+}
+
+.sf-symbols {
+    font-family: SF-Pro;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+.sf-symbols.arrow-up-right:before {
+    content: '\10012f';
+}

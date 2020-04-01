@@ -68,6 +68,24 @@ hr {
     margin-left: 30px;
 }
 
+.mdc-button {
+    height: auto;
+    margin: 15px auto;
+}
+
+.mdc-button.mdc-theme--secondary {
+    border-color: var(--mdc-theme-secondary)
+}
+
+.mdc-button--outlined, .mdc-button--raised {
+    padding: 15px 30px;
+}
+
+.mdc-card--outlined {
+    border: 1px solid var(--mdc-theme-primary);
+    border-radius: 4px;
+}
+
 .container {
     width: calc(100% - 20px);
     max-width: 1000px;
@@ -187,6 +205,12 @@ hr {
 
 .project-star, .project-fork {
     vertical-align: text-bottom;
+}
+
+.projects-link-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer {
