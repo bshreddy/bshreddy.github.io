@@ -1,3 +1,4 @@
 .DS_Store
 js/github-lang-colors-orig.json
 js/clean.py
+*.zip
