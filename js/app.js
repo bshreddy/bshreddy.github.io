@@ -13,7 +13,7 @@ function loadRepos() {
       const repoCard = `
         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
           <div class="mdc-card project-cell mdc-elevation--z4">
-            <div class="project-title">${repo.name}</div>
+            <a class="project-title" href=${repo.html_url}>${repo.name}</a>
             <div class="project-desc">${(repo.description) ? repo.description : ""}</div>
             <div class="project-info">
               <span class="project-lang">
