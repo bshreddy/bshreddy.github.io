@@ -22,3 +22,7 @@
 .sf-symbols.arrow-up-right:before {
     content: '\10012f';
 }
+
+.sf-symbols.envelope-fill:before {
+    content: '\100356';
+}
