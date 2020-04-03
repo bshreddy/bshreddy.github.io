@@ -5,8 +5,12 @@ $.get("https://api.github.com/users/saihemanthbr/repos", (repos, status) => {
     return
 
   var repoCards = ""
-  repos = repos.filter((repo) => { return pinned.includes(repo.name) && !(repo.name.startsWith('.') || repo.fork)})
-  repos = repos.sort(function(a, b) {return pinned.indexOf(a.name) - pinned.indexOf(b.name);});
+  repos = repos.filter((repo) => {return !(repo.name.startsWith('.') || repo.fork)})
+  pinnedRepos = repos.filter((repo) => { return pinned.includes(repo.name)})
+  pinnedRepos = pinnedRepos.sort(function(a, b) {return pinned.indexOf(a.name) - pinned.indexOf(b.name);});
+
+  repos = repos.filter((repo) => {return !pinned.includes(repo.name)})
+  repos = pinnedRepos.concat(repos)
   
   repos.forEach((repo) => {
     const repoCard = `
