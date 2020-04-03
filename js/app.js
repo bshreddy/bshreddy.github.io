@@ -10,7 +10,7 @@ $.get("https://api.github.com/users/saihemanthbr/repos", (repos, status) => {
   
   repos.forEach((repo) => {
     const repoCard = `
-      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+      <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-8-mobile">
         <div class="mdc-card project-card mdc-elevation--z4">
           <a class="project-title" href=${repo.html_url}>${repo.name}</a>
           <div class="project-desc">${(repo.description) ? repo.description : ""}</div>

@@ -95,6 +95,11 @@ hr {
     padding-right: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    .nav-menu {
+        display: none;
+    }
+}
 
 /* Index.html */
 .hero-image {
@@ -137,6 +142,13 @@ hr {
 
 .projects-list {
     margin: 30px;
+}
+
+@media only screen and (max-width: 720px) {
+    .projects-list {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 .project-card {
@@ -221,6 +233,13 @@ hr {
     margin: 30px;
 }
 
+@media only screen and (max-width: 720px) {
+    .skills-list {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 .skills-card {
     padding: 16px;
     background-color: white;
@@ -263,6 +282,11 @@ hr {
 .contact-info {
     margin: 30px auto;
     display: inline;
+    text-align: center;
+}
+
+.contact-info:nth-child(2) {
+    margin-top: 0px;
 }
 
 .contact-button {
@@ -282,6 +306,18 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--mdc-theme-on-primary);
+}
+
+.contact-info br {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-info br {
+        display: block;
+        margin: 10px 0;
+        content: " ";
+    }
 }
 
 .footer {
