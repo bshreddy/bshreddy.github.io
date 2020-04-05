@@ -1,6 +1,8 @@
 :root {
     --mdc-theme-primary: rgb(10, 10, 10);
     --mdc-theme-secondary: rgb(0, 122, 255);
+    --mdc-theme-secondary-light: rgb(105, 169, 255);
+    --mdc-theme-secondary-dark: rgb(0, 80, 203);
     --mdc-theme-background: #fff;
     --mdc-theme-surface: rgb(247, 247, 247);
     --mdc-theme-error: rgb(255, 59, 48);
@@ -10,7 +12,17 @@
     --mdc-theme-on-error: #fff;
 
     --mdc-top-app-bar-height: 44px;
-    --typography-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Calibri', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif
+    --typography-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, 'Calibri', 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif
+}
+
+@font-face {
+    font-family: SF-Pro;
+    src: url(../fonts/SF-Pro-Display-Regular.otf)
+}
+
+@font-face {
+    font-family: SF-Mono;
+    src: url(../fonts/SFMono-Regular.otf)
 }
 
 html, body {
@@ -136,6 +148,7 @@ hr {
     /* font-size: 2.5rem; */
 }
 
+/* Project Section */
 .projects-container {
     margin: 40px auto;
 }
@@ -225,6 +238,7 @@ hr {
     flex-direction: row;
 }
 
+/* Skills Section */
 .skills-container {
     margin: 40px auto;
 }
@@ -270,6 +284,79 @@ hr {
     padding: 8px 16px;
 }
 
+/* About Section */
+.about-container {
+    margin: 40px auto;
+}
+
+.about-card {
+    display: flex;
+    flex-direction: row;
+    margin: 64px;
+}
+
+.about-terminal {
+    flex-grow: 1;
+}
+
+.about-terminal-header {
+    background-image: linear-gradient(to bottom, rgb(72, 73, 75), rgb(60, 60, 64));
+    text-align: center;
+    color: rgb(191, 192, 194);
+    padding: 4px 0px;
+    font-size: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: solid 1px rgb(131, 132, 134);
+    border-bottom-color: rgb(24, 24, 24);
+}
+
+.about-terminal-body {
+    padding: 30px 20px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid 1px rgb(75, 75, 75);
+    border-top: none;
+    font-family: SF-Mono;
+}
+
+.about-terminal dl {
+    margin: 0px;
+    line-height: 21px;
+}
+
+.about-terminal dl dd {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.about-terminal dl dd:before {
+    content: ">>>";
+    margin-right: 5px;
+}
+
+.about-terminal dl dt {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: lightgray;
+}
+
+.about-terminal dl dt:last-child {
+    margin-bottom: 0px;
+}
+
+.about-terminal dl dt:before {
+    content: "=>";
+    margin-right: 5px;
+}
+
+.about-terminal a {
+    color: var(--mdc-theme-secondary-light);
+}
+
+/* Contact Section */
 .contact-container {
     margin: 40px auto;
 }
