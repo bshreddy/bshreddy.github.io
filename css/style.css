@@ -295,6 +295,27 @@ hr {
     margin: 64px;
 }
 
+@media only screen and (max-width: 720px) {
+    .about-card {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-card {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .about-card {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
 .about-terminal {
     flex-grow: 1;
 }
