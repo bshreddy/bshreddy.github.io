@@ -1,5 +1,5 @@
 function loadProjects() {
-  pinned = ["Sputify", "PhysicsSims", "ArcadeGames", "TextClassifier-FlaskWebApp"]
+  pinned = ["CropPrediction", "Sputify", "PhysicsSims", "ArcadeGames", "saihemanthbr.github.io", "TextClassifier-FlaskWebApp"]
 
   $.get("https://api.github.com/users/saihemanthbr/repos", (repos, status) => {
     if(repos == undefined)
