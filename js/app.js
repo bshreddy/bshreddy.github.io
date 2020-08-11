@@ -1,12 +1,13 @@
 function loadProjects() {
-  pinned = ["CropPrediction", "Sputify", "PhysicsSims", "ArcadeGames", "saihemanthbr.github.io", "TextClassifier-FlaskWebApp"]
+  pinned = ["Kushagra", "Sputify", "PhysicsSims", "saihemanthbr.github.io"]
+  excluded = ["ArcadeGames", "SkyRegion"]
 
   $.get("https://api.github.com/users/saihemanthbr/repos", (repos, status) => {
     if(repos == undefined)
       return
 
     var repoCards = ""
-    repos = repos.filter((repo) => {return !(repo.name.startsWith('.') || repo.fork)})
+    repos = repos.filter((repo) => {return !(repo.name.startsWith('.') || repo.fork || excluded.includes(repo.name))})
     pinnedRepos = repos.filter((repo) => { return pinned.includes(repo.name)})
     pinnedRepos = pinnedRepos.sort(function(a, b) {return pinned.indexOf(a.name) - pinned.indexOf(b.name);});
 

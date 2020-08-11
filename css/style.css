@@ -155,6 +155,8 @@ hr {
 
 .projects-list {
     margin: 30px;
+    max-height: 420px;
+    overflow-y: scroll;
 }
 
 @media only screen and (max-width: 720px) {
@@ -282,6 +284,9 @@ hr {
 
 .skills-ulist li {
     padding: 8px 16px;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+    page-break-inside: avoid; /* Firefox */
+    break-inside: avoid;
 }
 
 /* About Section */
