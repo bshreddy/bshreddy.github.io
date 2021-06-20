@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './vitals/reportWebVitals';
+import { StylesProvider, ThemeProvider } from '@material-ui/core/styles';
+import { theme } from './theme';
 
 import './styles/index.scss';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ThemeProvider theme={theme}>
+    <StylesProvider injectFirst>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </StylesProvider>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

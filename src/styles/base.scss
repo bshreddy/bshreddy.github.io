@@ -1,0 +1,100 @@
+$primary-color: #1C1C1E;
+$primary-color-light: #434345;
+$primary-color-dark: #000000;
+$text-on-primary: #FFFFFF;
+
+$secondary-color: #007AFF;
+$secondary-color-light: #69A8FF;
+$secondary-color-dark: #004FCB;
+$text-on-secondary: #FFFFFF;
+
+$ios-systemgray: #8E8E93;
+$ios-systemgray2: #AEAEB2;
+$ios-systemgray3: #C7C7CC;
+$ios-systemgray4: #D1D1D6;
+$ios-systemgray5: #E5E5EA;
+$ios-systemgray6: #F2F2F7;
+
+$ios-systemblue: rgb(0, 122, 255);
+$ios-systemgreen: rgb(52, 199, 89);
+$ios-systemindigo: rgb(88, 86, 214);
+$ios-systemorange: rgb(255, 149, 0);
+$ios-systempink: rgb(255, 45, 85);
+$ios-systempurple: rgb(175, 82, 222);
+$ios-systemred: rgb(255, 59, 48);
+$ios-systemteal: rgb(90, 200, 250);
+$ios-systemyellow: rgb(255, 204, 0);
+
+$background-color: $ios-systemgray6;
+$page-background: linear-gradient(180deg, #FFFFFF 0%, $ios-systemgray5 100%);
+
+// Theme Constants
+$theme--border-radius: 4px;
+$theme--spacing: 8px;
+
+// Breakpoints
+$breakpoints: (
+  xs: 0px,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px
+);
+
+* {
+    scroll-behavior: smooth;
+}
+
+@mixin respond-above($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Get the breakpoint value.
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        // Write the media query.
+        @media (min-width: $breakpoint-value) { @content; }
+        // If the breakpoint doesn't exist in the map.
+    } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
+}
+
+@mixin respond-below($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Get the breakpoint value.
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        // Write the media query.
+        @media (max-width: ($breakpoint-value - 1)) { @content; }
+    // If the breakpoint doesn't exist in the map.
+    } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
+}
+
+@mixin centered-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centered-column-flex {
+    @include centered-flex;
+    flex-direction: column;
+}
+
+@mixin truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none;
+}
+
+.error-message {
+    width: 100%;
+    margin-top: 20px;
+}
+
+// For theming
+:export {
+    $primary: $primary-color;
+    $secondary: $secondary-color;
+}
