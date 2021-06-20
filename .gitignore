@@ -2,3 +2,5 @@
 js/github-lang-colors-orig.json
 js/clean.py
 *.zip
+node_modules/
+package-lock.json
