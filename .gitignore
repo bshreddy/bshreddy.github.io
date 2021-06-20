@@ -4,3 +4,4 @@ js/clean.py
 *.zip
 node_modules/
 package-lock.json
+**/.env*
