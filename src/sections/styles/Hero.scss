@@ -1,0 +1,34 @@
+@import '../../styles/base.scss';
+
+.hero-image {
+    background-image: url('../../static/images/hero-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 100%;
+    transform: translate(0%, -50%);
+    color: inherit;
+    letter-spacing: 0.15em;
+}
+
+.hero-title {
+    font-size: min(7.5rem, 15rem);
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    margin-top: 10px;
+    font-weight: lighter;
+    line-height: 1.25;
+}
