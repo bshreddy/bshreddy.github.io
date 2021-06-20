@@ -7,9 +7,15 @@ import {default as NavBarToolbar} from './NavBar/Toolbar'
 import {default as NavBarToolbarMenu} from './NavBar/ToolbarMenu'
 import {default as NavBarToolbarMobileMenu} from './NavBar/ToolbarMobileMenu'
 
+import { Section } from '../types';
+
 import './styles/NavBar.scss';
 
-function NavBar() {
+type NavBarProps = {
+  sections: Array<Section>;
+}
+
+function NavBar({ sections }: NavBarProps) {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -34,7 +40,7 @@ function NavBar() {
   
   return (
     <div className='navbar-grow'>
-      <AppBar position="static" elevation={8}>
+      <AppBar position="fixed" elevation={8}>
         <Toolbar>
           <Typography className='navbar-title' variant="h6" noWrap>Sai Hemanth Bheemreddy</Typography>
           <div className='navbar-grow' />
@@ -43,6 +49,7 @@ function NavBar() {
             menuId={menuId}
             mobileMenuId={mobileMenuId}
             onMobileMenuOpen={handleMobileMenuOpen}
+            sections={sections}
           />
         </Toolbar>
       </AppBar>
@@ -52,6 +59,7 @@ function NavBar() {
         id={mobileMenuId} 
         open={isMobileMenuOpen} 
         onClose={handleMobileMenuClose} 
+        sections={sections}
       />
 
       <NavBarToolbarMenu 
@@ -59,6 +67,7 @@ function NavBar() {
         id={menuId} 
         open={isMenuOpen} 
         onClose={handleMenuClose} 
+        sections={sections}
       />      
     </div>
   );

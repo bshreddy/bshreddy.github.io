@@ -1,5 +1,6 @@
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { Section } from '../../types';
 
 import '../styles/NavBar.scss';
 
@@ -8,9 +9,10 @@ type ToolbarMobileMenuProps = {
   anchorEl: null | Element | ((element: Element) => Element);
   open: boolean;
   onClose: () => void;
+  sections: Array<Section>;
 }
 
-function ToolbarMobileMenu({id, anchorEl, open, onClose}: ToolbarMobileMenuProps) {
+function ToolbarMobileMenu({ id, anchorEl, open, onClose, sections }: ToolbarMobileMenuProps) {
   return (
     <Menu
       anchorEl={anchorEl}
@@ -21,7 +23,9 @@ function ToolbarMobileMenu({id, anchorEl, open, onClose}: ToolbarMobileMenuProps
       open={open}
       onClose={onClose}
     >
-      <MenuItem><p>About</p></MenuItem>
+      {sections.map((section) =>
+        <MenuItem key={section.id}>{section.name}</MenuItem>
+      )}
     </Menu>
   );
 }

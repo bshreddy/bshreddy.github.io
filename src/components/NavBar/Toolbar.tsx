@@ -1,6 +1,7 @@
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import { Section } from '../../types';
 
 import '../styles/NavBar.scss';
 
@@ -8,13 +9,16 @@ type ToolbarProps = {
   menuId: string;
   mobileMenuId: string;
   onMobileMenuOpen: (event: React.MouseEvent<HTMLElement>) => void;
+  sections: Array<Section>;
 };
 
-function Toolbar({menuId, mobileMenuId, onMobileMenuOpen}: ToolbarProps) {
+function Toolbar({menuId, mobileMenuId, onMobileMenuOpen, sections}: ToolbarProps) {
   return (
     <>
       <div className='navbar-section-desktop'>
-        <Button variant="text" className="navbar-button">About</Button>
+        {sections.map((section) =>
+          <Button key={section.id} variant="text" className="navbar-button">{section.name}</Button>
+        )}
       </div>
 
       <div className='navbar-section-mobile'>
