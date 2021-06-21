@@ -14,8 +14,9 @@ function Hero() {
   return (
     <div className="hero-image" id="hero-image" style={{backgroundImage: `url(${backgroundImage})`}}>
       <div className="hero-text">
-        {/* <div className="hero-title" id="hero-title">Sai Hemanth Bheemreddy</div> */}
-        <Typography variant="h1" gutterBottom className="hero-title">Sai Hemanth Bheemreddy</Typography>
+        <Typography variant="h4" component="div"className="hero-title-before">Hello, My name is</Typography>
+        <Typography variant="h1" component="div" className="hero-title">Sai Hemanth Bheemreddy</Typography>
+        <Typography variant="h4" component="div"className="hero-title-after">I love engineering things for fun!</Typography>
       </div>
 
       <div className="hero-footer">

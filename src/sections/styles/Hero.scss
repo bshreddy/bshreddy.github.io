@@ -15,20 +15,33 @@
     .hero-text {
         color: $text-on-primary;
         letter-spacing: 0.15em;
-        text-align: center;
-    }
+        display: flex;
+        flex-direction: column;
 
-    .hero-title {
-        font-size: 4rem;
-        font-weight: 100;
-        line-height: 1.2;
-
-        @include respond-above(sm) {
-            font-size: 6rem;
+        .hero-title-before {
+            font-weight: normal;
+            text-align: left;
         }
 
-        @include respond-above(md) {
-            font-size: 8rem;
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 100;
+            line-height: 1.2;
+            display: inline-block;
+            text-align: center;
+
+            @include respond-above(sm) {
+                font-size: 6rem;
+            }
+
+            @include respond-above(md) {
+                font-size: 8rem;
+            }
+        }
+
+        .hero-title-after {
+            font-weight: normal;
+            text-align: right;
         }
     }
 
