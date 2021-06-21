@@ -3,9 +3,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-import {default as NavBarToolbar} from './NavBar/Toolbar'
-import {default as NavBarToolbarMenu} from './NavBar/ToolbarMenu'
-import {default as NavBarToolbarMobileMenu} from './NavBar/ToolbarMobileMenu'
+import { default as NavBarToolbar } from './NavBar/Toolbar'
+import { default as NavBarToolbarMenu } from './NavBar/ToolbarMenu'
+import { default as NavBarToolbarMobileMenu } from './NavBar/ToolbarMobileMenu'
 
 import { Section } from '../types';
 
@@ -37,15 +37,15 @@ function NavBar({ sections }: NavBarProps) {
 
   const menuId = 'dashboard-search-account-menu';
   const mobileMenuId = 'dashboard-search-account-menu-mobile';
-  
+
   return (
-    <div className='navbar-grow'>
-      <AppBar position="fixed" elevation={8}>
+    <>
+      <AppBar position="fixed" elevation={8} className="navbar">
         <Toolbar>
           <Typography className='navbar-title' variant="h6" noWrap>Sai Hemanth Bheemreddy</Typography>
           <div className='navbar-grow' />
 
-          <NavBarToolbar 
+          <NavBarToolbar
             menuId={menuId}
             mobileMenuId={mobileMenuId}
             onMobileMenuOpen={handleMobileMenuOpen}
@@ -54,22 +54,22 @@ function NavBar({ sections }: NavBarProps) {
         </Toolbar>
       </AppBar>
 
-      <NavBarToolbarMobileMenu 
-        anchorEl={mobileMoreAnchorEl} 
-        id={mobileMenuId} 
-        open={isMobileMenuOpen} 
-        onClose={handleMobileMenuClose} 
+      <NavBarToolbarMobileMenu
+        anchorEl={mobileMoreAnchorEl}
+        id={mobileMenuId}
+        open={isMobileMenuOpen}
+        onClose={handleMobileMenuClose}
         sections={sections}
       />
 
-      <NavBarToolbarMenu 
-        anchorEl={anchorEl} 
-        id={menuId} 
-        open={isMenuOpen} 
-        onClose={handleMenuClose} 
+      <NavBarToolbarMenu
+        anchorEl={anchorEl}
+        id={menuId}
+        open={isMenuOpen}
+        onClose={handleMenuClose}
         sections={sections}
-      />      
-    </div>
+      />
+    </>
   );
 }
 
