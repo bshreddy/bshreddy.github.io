@@ -4,16 +4,16 @@
         "name": "Hero"
     },
     {
+        "id": "3",
+        "name": "About"
+    },
+    {
         "id": "1",
         "name": "Projects"
     },
     {
         "id": "2",
         "name": "Skills"
-    },
-    {
-        "id": "3",
-        "name": "About"
     },
     {
         "id": "4",
