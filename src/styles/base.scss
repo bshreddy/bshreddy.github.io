@@ -59,6 +59,8 @@ $breakpoints: (
         // Write the media query.
         @media (min-width: $breakpoint-value) { @content; }
         // If the breakpoint doesn't exist in the map.
+    } @else if type-of($breakpoint) == number {
+        @media (min-width: $breakpoint) { @content; }
     } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
 }
 
@@ -70,6 +72,8 @@ $breakpoints: (
         // Write the media query.
         @media (max-width: ($breakpoint-value - 1)) { @content; }
     // If the breakpoint doesn't exist in the map.
+    } @else if type-of($breakpoint) == number {
+        @media (max-width: $breakpoint - 1) { @content; }
     } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
 }
 

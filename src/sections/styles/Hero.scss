@@ -17,10 +17,13 @@
         letter-spacing: 0.15em;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .hero-title-before {
             font-weight: normal;
             text-align: left;
+            width: 100%;
         }
 
         .hero-title {
@@ -37,11 +40,16 @@
             @include respond-above(md) {
                 font-size: 8rem;
             }
+
+            @include respond-below(1400px) {
+                width: min-content;
+            }
         }
 
         .hero-title-after {
             font-weight: normal;
             text-align: right;
+            width: 100%;
         }
     }
 
@@ -57,12 +65,12 @@
 
         .name {
             color: $text-on-primary;
-            margin: 20px;
+            margin: $theme--spacing * 2;
         }
 
         .copyright {
             color: $text-on-primary;
-            margin: 20px;
+            margin: $theme--spacing * 2;
         }
     }
 }

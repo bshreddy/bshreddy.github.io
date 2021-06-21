@@ -1,7 +1,9 @@
 import NavBar from './components/NavBar';
-import './styles/App.scss';
+import BackToTop from './components/BackToTop';
 import {SectionComponents} from './sections';
 import sections from './json/sections.json';
+
+import './styles/App.scss';
 
 function App() {
   return (
@@ -12,9 +14,11 @@ function App() {
 
       <div className="container">
         {sections.map((section) => 
-          <section key={section.id} className="child">{SectionComponents[section.name]}</section>
+          <section key={section.id} id={section.id} className="child">{SectionComponents[section.name]}</section>
         )}
       </div>
+
+      <BackToTop />
     </div>
   );
 }
