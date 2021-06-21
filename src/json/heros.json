@@ -3,54 +3,63 @@
         "id": "0",
         "name": "Rocky Beach",
         "filename": "rocky_beach.jpg",
-        "copyright": ""
+        "copyright": "",
+        "color": "#FFFFFF"
     },
     {
         "id": "1",
         "name": "Starship SN10 Landing",
         "filename": "starship_sn10_landing.jpg",
-        "copyright": "\u00A9 SpaceX Inc."
+        "copyright": "\u00A9 SpaceX Inc.",
+        "color": "#000000"
     },
     {
         "id": "2",
         "name": "Starship SN8 Launch",
         "filename": "starship_sn8_launch.jpg",
-        "copyright": "\u00A9 SpaceX Inc."
+        "copyright": "\u00A9 SpaceX Inc.",
+        "color": "#FFFFFF"
     },
     {
         "id": "3",
         "name": "Starship SN8 on Test Stand",
         "filename": "starship_sn8_stand.jpg",
-        "copyright": "\u00A9 SpaceX Inc."
+        "copyright": "\u00A9 SpaceX Inc.",
+        "color": "#FFFFFF"
     },
     {
         "id": "4",
         "name": "Planet Mars",
         "filename": "mars.jpg",
-        "copyright": "\u00A9 Martians? God?"
+        "copyright": "\u00A9 Martians? God?",
+        "color": "#FFFFFF"
     },
     {
         "id": "5",
         "name": "macOS Monterey Wallpaper",
         "filename": "monterey.jpg",
-        "copyright": "\u00A9 Apple Inc. All rights reserved."
+        "copyright": "\u00A9 Apple Inc. All rights reserved.",
+        "color": "#FFFFFF"
     },
     {
         "id": "6",
         "name": "Palace of Westminster, London, UK",
         "filename": "london.jpg",
-        "copyright": "\u00A9 The Monarch? 🤷"
+        "copyright": "\u00A9 The Monarch? 🤷",
+        "color": "#FFFFFF"
     },
     {
         "id": "7",
         "name": "Night Sky",
         "filename": "night_sky.jpg",
-        "copyright": ""
+        "copyright": "",
+        "color": "#FFFFFF"
     },
     {
         "id": "8",
         "name": "Northern Lights, Astotin Lake, Canada",
         "filename": "northern-lights.jpg",
-        "copyright": "\u00A9 Serey Kim"
+        "copyright": "\u00A9 Serey Kim",
+        "color": "#FFFFFF"
     }
 ]
