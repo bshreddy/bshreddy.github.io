@@ -43,6 +43,12 @@ $breakpoints: (
 
 * {
     scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 @mixin respond-above($breakpoint) {
@@ -91,6 +97,10 @@ a {
 .error-message {
     width: 100%;
     margin-top: 20px;
+}
+
+.flex-grow {
+    flex-grow: 1;
 }
 
 // For theming

@@ -1,0 +1,56 @@
+[
+    {
+        "id": "0",
+        "name": "Rocky Beach",
+        "filename": "rocky_beach.jpg",
+        "copyright": ""
+    },
+    {
+        "id": "1",
+        "name": "Starship SN10 Landing",
+        "filename": "starship_sn10_landing.jpg",
+        "copyright": "\u00A9 SpaceX Inc."
+    },
+    {
+        "id": "2",
+        "name": "Starship SN8 Launch",
+        "filename": "starship_sn8_launch.jpg",
+        "copyright": "\u00A9 SpaceX Inc."
+    },
+    {
+        "id": "3",
+        "name": "Starship SN8 on Test Stand",
+        "filename": "starship_sn8_stand.jpg",
+        "copyright": "\u00A9 SpaceX Inc."
+    },
+    {
+        "id": "4",
+        "name": "Planet Mars",
+        "filename": "mars.jpg",
+        "copyright": "\u00A9 Martians? God?"
+    },
+    {
+        "id": "5",
+        "name": "macOS Monterey Wallpaper",
+        "filename": "monterey.jpg",
+        "copyright": "\u00A9 Apple Inc. All rights reserved."
+    },
+    {
+        "id": "6",
+        "name": "Palace of Westminster, London, UK",
+        "filename": "london.jpg",
+        "copyright": "\u00A9 The Monarch? 🤷"
+    },
+    {
+        "id": "7",
+        "name": "Night Sky",
+        "filename": "night_sky.jpg",
+        "copyright": ""
+    },
+    {
+        "id": "8",
+        "name": "Northern Lights, Astotin Lake, Canada",
+        "filename": "northern-lights.jpg",
+        "copyright": "\u00A9 Serey Kim"
+    }
+]

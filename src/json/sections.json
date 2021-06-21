@@ -1,22 +1,22 @@
 [
     {
-        "id": "0",
+        "id": "hero",
         "name": "Hero"
     },
     {
-        "id": "3",
+        "id": "about",
         "name": "About"
     },
     {
-        "id": "1",
+        "id": "projects",
         "name": "Projects"
     },
     {
-        "id": "2",
+        "id": "skills",
         "name": "Skills"
     },
     {
-        "id": "4",
+        "id": "contact",
         "name": "Contact"
     }
 ]
