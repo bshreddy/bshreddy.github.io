@@ -28,6 +28,8 @@ $ios-systemyellow: rgb(255, 204, 0);
 $background-color: $ios-systemgray6;
 $page-background: linear-gradient(180deg, #FFFFFF 0%, $ios-systemgray5 100%);
 
+$default-font-families: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+
 // Theme Constants
 $theme--border-radius: 4px;
 $theme--spacing: 8px;
@@ -93,6 +95,26 @@ $breakpoints: (
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+@mixin google-font($family) {
+    @import url("http://fonts.googleapis.com/css?family=#{$family}");
+}
+
+@mixin import-font($family, $filename, $font-weight) {
+    @font-face {
+        font-family: $family;
+        src: url("../static/fonts/#{$filename}");
+        font-weight: $font-weight;
+    }
+}
+  
+@include google-font("Marck+Script");
+@include import-font("SF Pro Display", "SF-Pro-Display-Regular.otf", regular);
+@include import-font("SF Mono", "SFMono-Regular.otf", regular);
+
+
+// @import url("../static/fonts/SF-Pro-Display-Regular.otf");
+// @import url("../static/fonts/SFMono-Regular.otf");
 
 a {
     text-decoration: none;

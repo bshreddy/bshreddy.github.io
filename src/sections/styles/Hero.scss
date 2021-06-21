@@ -13,8 +13,6 @@
     justify-content: center;
 
     .hero-text {
-        color: $text-on-primary;
-        letter-spacing: 0.15em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,6 +30,8 @@
             line-height: 1.2;
             display: inline-block;
             text-align: center;
+            text-transform: capitalize;
+            font-family: "Marck Script", "SF Pro Display", "SF Mono", $default-font-families;
 
             @include respond-above(sm) {
                 font-size: 6rem;
@@ -64,12 +64,10 @@
         text-align: center;
 
         .name {
-            color: $text-on-primary;
             margin: $theme--spacing * 2;
         }
 
         .copyright {
-            color: $text-on-primary;
             margin: $theme--spacing * 2;
         }
     }
