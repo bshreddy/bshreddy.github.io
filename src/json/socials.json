@@ -1,0 +1,32 @@
+[
+    {
+        "id": "0",
+        "name": "Email",
+        "filename": "envelope-mark.svg",
+        "link": "mailto:sh.bheemreddy@gmail.com"
+    },
+    {
+        "id": "1",
+        "name": "GitHub",
+        "filename": "github-mark.svg",
+        "link": "https://github.com/SaiHemanthBR"
+    },
+    {
+        "id": "2",
+        "name": "LinkedIn",
+        "filename": "linkedin-mark.svg",
+        "link": "https://www.linkedin.com/in/saihemanthbr/"
+    },
+    {
+        "id": "3",
+        "name": "Instagram",
+        "filename": "instagram-mark.svg",
+        "link": "https://www.instagram.com/saihemanthbr/"
+    },
+    {
+        "id": "4",
+        "name": "Twitter",
+        "filename": "twitter-mark.svg",
+        "link": "https://twitter.com/BSaiHemanth"
+    }
+]
