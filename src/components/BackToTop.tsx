@@ -8,9 +8,10 @@ import './styles/BackToTop.scss'
 
 type BackToTopProps = {
   window?: () => Window;
+  goto: string;
 }
 
-function BackToTop({ window }: BackToTopProps) {
+function BackToTop({ window, goto }: BackToTopProps) {
   const trigger = useScrollTrigger({
     target: window ? window() : undefined,
     disableHysteresis: true,
@@ -19,7 +20,7 @@ function BackToTop({ window }: BackToTopProps) {
 
   const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
     const anchor = ((event.target as HTMLDivElement).ownerDocument || document).querySelector(
-      '#hero',
+      `#${goto}`,
     );
 
     if (anchor) {
