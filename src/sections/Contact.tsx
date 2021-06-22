@@ -23,7 +23,7 @@ function Contact() {
           {socials.map((social) =>
             <Card key={social.id} className="social-card" elevation={4}>
               <CardActionArea className="social-card-action" href={social.link}>
-                <img src={`${social_icon_baseurl}/${social.filename}`}/>
+                <img src={`${social_icon_baseurl}/${social.filename}`} alt={`link to ${social.name}`}/>
                 <Typography variant="subtitle1" align="center" component="span">{social.name}</Typography>
               </CardActionArea>
             </Card>
