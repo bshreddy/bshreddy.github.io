@@ -18,7 +18,7 @@ function App() {
         )}
       </div>
 
-      <BackToTop />
+      <BackToTop goto={sections[0].id} />
     </div>
   );
 }
