@@ -5,7 +5,7 @@ import { getRandomInt } from '../../helpers';
 
 import '../styles/Projects.scss';
 
-function ProjectsLoading() {
+function Loading() {
   return (
     <Container maxWidth="sm" className="projects-loading-root">
       <div className="projects-loading">
@@ -16,4 +16,4 @@ function ProjectsLoading() {
   );
 }
 
-export default ProjectsLoading;
+export default Loading;

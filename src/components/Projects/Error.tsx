@@ -10,7 +10,7 @@ type ProjectsErrorProps = {
   error: ApolloError | undefined;
 }
 
-function ProjectsError({ error }: ProjectsErrorProps) {
+function Error({ error }: ProjectsErrorProps) {
   const { titles, emojies, messages } = jsonData;
   
   const title = titles[getRandomInt(titles.length)];
@@ -31,4 +31,4 @@ function ProjectsError({ error }: ProjectsErrorProps) {
   );
 }
 
-export default ProjectsError;
+export default Error;

@@ -1,6 +1,6 @@
 import { useQuery } from "@apollo/client";
-import ProjectsLoading from '../components/Projects/ProjectsLoading';
-import ProjectsError from '../components/Projects/ProjectsError';
+import {default as ProjectsLoading} from '../components/Projects/Loading';
+import {default as ProjectsError} from '../components/Projects/Error';
 
 import { GithubReposQuery } from '../graphql';
 
