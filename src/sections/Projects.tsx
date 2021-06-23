@@ -1,7 +1,15 @@
+import { useQuery } from "@apollo/client";
+import ProjectsError from '../components/Projects/ProjectsError';
+
+import { GithubReposQuery } from '../graphql';
+
 function Projects() {
-  return (
-    <>Projects</>
-  );
+  const { loading, error, data } = useQuery(GithubReposQuery);
+
+  if (loading) return <>Loading...</>;
+  if (error) return <ProjectsError error={error} />;
+
+  return <>Projects</>;
 }
 
-export default Projects;
+export default (Projects);
