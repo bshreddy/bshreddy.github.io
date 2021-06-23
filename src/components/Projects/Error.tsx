@@ -6,11 +6,11 @@ import { getRandomInt } from '../../helpers';
 import jsonData from '../../json/ProjectsError.json';
 import '../styles/Projects.scss';
 
-type ProjectsErrorProps = {
+type ErrorProps = {
   error: ApolloError | undefined;
 }
 
-function Error({ error }: ProjectsErrorProps) {
+function Error({ error }: ErrorProps) {
   const { titles, emojies, messages } = jsonData;
   
   const title = titles[getRandomInt(titles.length)];
