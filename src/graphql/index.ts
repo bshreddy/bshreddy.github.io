@@ -22,3 +22,4 @@ export const graphqlClient = new ApolloClient({
 });
 
 export const GithubReposQuery = loader('./projects.graphql');
+export * from './index.d';
