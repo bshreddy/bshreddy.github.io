@@ -1,11 +1,7 @@
 import Typography from "@material-ui/core/Typography";
-
-import heros from "../json/heros.json"
-import './styles/Hero.scss'
-
-const getRandomInt = (max: number) => {
-  return Math.floor(Math.random() * max);
-}
+import { getRandomInt } from '../helpers';
+import heros from '../json/heros.json';
+import './styles/Hero.scss';
 
 function Hero() {
   const hero = heros[getRandomInt(heros.length)];

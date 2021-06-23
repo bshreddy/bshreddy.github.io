@@ -1,0 +1,32 @@
+@import '../../styles/base.scss';
+
+.projects-error-root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .projects-error {
+        display: inline-block;
+        text-align: center;
+
+        .title {
+            
+        }
+
+        .technical-message {
+            font-family: "SF Mono", 'Courier New', Courier, monospace, $default-font-families;
+            color: $primary-color-light;
+
+            a {
+                color: $primary-color-light;
+            }
+        }
+
+        .error-message {
+            font-family: "SF Mono", 'Courier New', Courier, monospace, $default-font-families;
+            color: $primary-color-light;
+        }
+    }
+}
