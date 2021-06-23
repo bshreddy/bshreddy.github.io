@@ -1,8 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles'
 import './declarations.d';
-import baseStyle from './styles/base.scss'
-
-console.log(baseStyle.primary)
 
 export const theme = createMuiTheme({
   palette: {
