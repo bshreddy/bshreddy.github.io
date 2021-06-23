@@ -1,0 +1,51 @@
+query GithubReposQuery {
+  user(login: "SaiHemanthBR") {
+    pinnedItems(first: 10, types: [REPOSITORY, GIST]) {
+      edges {
+        node {
+          ... on Repository {
+            id
+          }
+        }
+      }
+    }
+    
+    repositories(first: 100, privacy: PUBLIC, orderBy: {field: NAME, direction: ASC}) {
+      totalCount
+      nodes {
+        id
+        name
+        url
+        stargazerCount
+        forkCount
+        languages(first: 3, orderBy: {field: SIZE, direction: ASC}) {
+          nodes {
+            id
+            name
+            color
+          }
+          edges {
+            size
+          }
+        }
+        description
+        homepageUrl
+        isArchived
+        isFork
+        isInOrganization
+        readme: object(expression: "master:README.md") {
+          ... on Blob {
+            text
+          }
+        }
+        repositoryTopics(first: 100) {
+          nodes {
+            topic {
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}
