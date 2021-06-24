@@ -43,16 +43,6 @@ $breakpoints: (
   xl: 1920px
 );
 
-* {
-    scroll-behavior: smooth;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
 @mixin respond-above($breakpoint) {
     // If the breakpoint exists in the map.
     @if map-has-key($breakpoints, $breakpoint) {
@@ -112,9 +102,16 @@ $breakpoints: (
 @include import-font("SF Pro Display", "SF-Pro-Display-Regular.otf", regular);
 @include import-font("SF Mono", "SFMono-Regular.otf", regular);
 
-
-// @import url("../static/fonts/SF-Pro-Display-Regular.otf");
-// @import url("../static/fonts/SFMono-Regular.otf");
+* {
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    box-sizing:border-box;
+}
 
 a {
     text-decoration: none;
