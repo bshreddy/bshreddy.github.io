@@ -56,7 +56,7 @@ export type Repository = {
 
 export type GithubUser = {
   pinnedItems: {
-    edge: Array<PinnedItem>;
+    edges: Array<PinnedItem>;
   };
   repositories: {
     totalCount: number;
