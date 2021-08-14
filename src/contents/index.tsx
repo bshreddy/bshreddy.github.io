@@ -8,7 +8,7 @@ import { ApolloProvider } from "@apollo/client";
 import { theme } from 'apps/theme'
 import { graphqlClient } from 'apps/graphql';
 
-import 'styles';
+import 'styles/index.scss';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
