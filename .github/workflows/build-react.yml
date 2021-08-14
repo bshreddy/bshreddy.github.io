@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: List files
+        run: ls -la
+
       - name: Generate build
         run: npm run build
 
