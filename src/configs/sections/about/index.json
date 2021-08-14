@@ -1,0 +1,62 @@
+[
+    {
+        "prompt": "Hemanth.origin",
+        "result": "\"Hyderabad, Telangana, India\""
+    },
+    {
+        "prompt": "Hemanth.origin",
+        "result": [
+            {
+                "organization": "Oracle Corporation",
+                "job title": "Associate Software Engineer",
+                "location": "Hyderabad, Telangana, India",
+                "time": "Jul 2021 - Present"
+            }
+        ],
+        "preprocess": "(result) => JSON.stringify(result, null, 2)"
+    },
+    {
+        "prompt": "Hemanth.education",
+        "result": {
+            "institute": "CVR College of Engineering",
+            "major": "Computer Science and Engineering (CSE)",
+            "graduation": "2021"
+        },
+        "preprocess": "(result) => JSON.stringify(result, null, 2)"
+    },
+    {
+        "prompt": "Hemanth.resume",
+        "result_attr": {
+            "dangerouslySetInnerHTML": {
+                "__html": "<a href={`${process.env.PUBLIC_URL}/static/resume.pdf`}>résumé.pdf</a>"
+            }
+        }
+    },
+    {
+        "prompt": "Hemanth.contact.linkedin",
+        "result_attr": {
+            "dangerouslySetInnerHTML": {
+                "__html": "<a href='https://www.linkedin.com/in/saihemanthbr/'>linkedin.com/in/saihemanthbr/</a>"
+            }
+        }
+    },
+    {
+        "prompt": "Hemanth.age",
+        "preprocess": "() => Math.abs((new Date(Date.now() - (new Date('1999/07/15')).getTime())).getUTCFullYear() - 1970)"
+    },
+    {
+        "prompt": "Hemanth.languages",
+        "result": ["English","Telugu", "Hindi"],
+        "preprocess": "(result) => JSON.stringify(result)"
+    },
+    {
+        "prompt": "Hemanth.interests",
+        "result": ["Coding", "Cycling", "Listening to Music", "Reading Books"],
+        "preprocess": "(result) => JSON.stringify(result)"
+    },
+    {
+        "prompt": "Hemanth.strengths",
+        "result": ["I Never Give Up", "Autodidact", "Quick Learner"],
+        "preprocess": "(result) => JSON.stringify(result)"
+    }
+]

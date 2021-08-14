@@ -1,6 +1,7 @@
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
+import about_json from "configs/sections/about/index.json"
 import "styles/sections/about/index.scss"
 
 function About() {
@@ -17,43 +18,19 @@ function About() {
           <div className="title-bar">saihemanthbr - aboutme</div>
           <div className="body">
             <dl>
-              <dd>Hemanth.origin</dd>
-              <dt>"Hyderabad, Telangana, India"</dt>
-
-              <dd>Hemanth.experience.order_by("start_date", in.desc)</dd>
-              <dt>{"[{"} <br />
-                &nbsp;&nbsp;"organization": "Oracle Corporation", <br />
-                &nbsp;&nbsp;"job title": "Associate Software Engineer", <br />
-                &nbsp;&nbsp;"location": "Hyderabad, Telangana, India" <br />
-                &nbsp;&nbsp;"time": "Jul 2021 - Present" <br />
-                {"}]"}
-              </dt>
-
-              <dd>Hemanth.education</dd>
-              <dt>{"{"} <br />
-                &nbsp;&nbsp;"institute": "CVR College of Engineering", <br />
-                &nbsp;&nbsp;"major": "Computer Science and Engineering (CSE)", <br />
-                &nbsp;&nbsp;"graduation": "2021" <br />
-                {"}"}
-              </dt>
-
-              <dd>Hemanth.resume</dd>
-              <dt><a href={`${process.env.PUBLIC_URL}/static/resume.pdf`}>résumé.pdf</a></dt>
-
-              <dd>Hemanth.contact.linkedin</dd>
-              <dt><a href="https://www.linkedin.com/in/saihemanthbr/">linkedin.com/in/saihemanthbr/</a></dt>
-
-              <dd>Hemanth.age</dd>
-              <dt>{age}</dt>
-
-              <dd>Hemanth.languages</dd>
-              <dt>["English","Telugu", "Hindi"]</dt>
-
-              <dd>Hemanth.interests</dd>
-              <dt>["Coding", "Cycling", "Listening to Music", "Reading Books"]</dt>
-
-              <dd>Hemanth.strengths</dd>
-              <dt>["I Never Give Up", "Autodidact", "Quick Learner"]</dt>
+              {
+                about_json.map((item, index) => {
+                  let result = (item.preprocess) ? eval(item.preprocess)(item.result) : item.result;
+                  return (
+                    <>
+                      <dd key={index}>{item.prompt}</dd>
+                      <dt key={index} {...item.result_attr}>
+                        {result}
+                      </dt>
+                    </>
+                  );
+                })
+              }
             </dl>
           </div>
         </Container>
