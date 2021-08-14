@@ -5,3 +5,5 @@ js/clean.py
 node_modules/
 package-lock.json
 **/.env*
+TODO.md
+.debris
