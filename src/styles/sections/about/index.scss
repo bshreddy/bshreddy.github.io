@@ -20,7 +20,8 @@
     .about-content {
         padding: 0 * $theme--spacing 3 * $theme--spacing;
         flex: 1 1 0;
-        height: 100%;
+        min-height: 0%;
+
         justify-content: center;
         align-items: center;
         display: flex;
@@ -31,6 +32,7 @@
             display: flex;
             flex-direction: column;
             flex: 1 1 0;
+            min-height: 0%;
 
             @include respond-above(lg) {
                 max-height: 75%;
@@ -59,6 +61,7 @@
                 border-top: none;
                 font-family: "SF Mono", 'Courier New', Courier, monospace, $default-font-families;
                 flex: 1 1 0;
+                min-height: 0%;
                 overflow-y: scroll;
 
                 dl {
