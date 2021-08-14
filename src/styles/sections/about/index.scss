@@ -1,0 +1,100 @@
+@import 'styles/base.scss';
+
+.about-root {
+    padding: 3 * $theme--spacing 0 * $theme--spacing;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .about-head {
+        padding: 0 * $theme--spacing 3 * $theme--spacing;
+
+        .about-title {
+        }
+
+        .about-subtitle {
+            color: $primary-color-light
+        }
+    }
+
+    .about-content {
+        padding: 0 * $theme--spacing 3 * $theme--spacing;
+        flex: 1 1 0;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .about-terminal {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0;
+
+            @include respond-above(lg) {
+                max-height: 75%;
+            }
+
+            .title-bar {
+                background-image: linear-gradient(to bottom, rgb(72, 73, 75), rgb(60, 60, 64));
+                text-align: center;
+                color: rgb(191, 192, 194);
+                padding: 4px 0px;
+                height: 30px;
+                font-size: 14px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border: solid 1px rgb(131, 132, 134);
+                border-bottom-color: rgb(24, 24, 24);
+            }
+
+            .body {
+                padding: 30px 20px;
+                background-color: rgb(30, 30, 30);
+                color: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border: solid 1px rgb(75, 75, 75);
+                border-top: none;
+                font-family: "SF Mono", 'Courier New', Courier, monospace, $default-font-families;
+                flex: 1 1 0;
+                overflow-y: scroll;
+
+                dl {
+                    margin: 0px;
+                    line-height: 21px;
+                }
+
+                dl dd {
+                    margin: 0;
+                    color: $text-on-primary;
+                }
+
+                dl dd:before {
+                    content: ">>>";
+                    margin-right: 5px;
+                }
+
+                dl dt {
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    color: $ios-systemgray3;
+                }
+
+                dl dt:last-child {
+                    margin-bottom: 0px;
+                }
+
+                dl dt:before {
+                    content: "=>";
+                    margin-right: 5px;
+                }
+
+                a {
+                    color: $secondary-color-light;
+                }
+            }
+        }
+    }
+}
