@@ -53,19 +53,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Setup Git
+        run: |
+          git config --global user.name ${{ secrets.USERNAME }}
+          git config --global user.email ${{ secrets.EMAIL }}
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git switch -c gh-pages
+
       - name: Get artifact
         uses: actions/download-artifact@v2
         with:
           name: react-build
           path: build
 
-      - name: Push to build dir on master branch
+      - name: Commit Build
         run: |
           rm -r docs
           mv build docs
-          git config --global user.name ${{ secrets.USERNAME }}
-          git config --global user.email ${{ secrets.EMAIL }}
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add docs
           git commit -am "Automated React Build for Deploy"
           git push
