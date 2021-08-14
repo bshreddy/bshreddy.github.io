@@ -1,7 +1,6 @@
 @import 'styles/base.scss';
 
 .hero-image {
-    // background-image: url('../../static/images/hero-image.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +16,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: auto;
 
         .hero-title-before {
             font-weight: normal;
@@ -25,13 +25,17 @@
         }
 
         .hero-title {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 100;
             line-height: 1.2;
             display: inline-block;
             text-align: center;
             text-transform: capitalize;
             font-family: "Marck Script", "SF Pro Display", "SF Mono", $default-font-families;
+
+            @include respond-above(320px) {
+                font-size: 4rem;
+            }
 
             @include respond-above(sm) {
                 font-size: 6rem;
@@ -65,10 +69,12 @@
 
         .name {
             margin: $theme--spacing * 2;
+            text-align: left;
         }
 
         .copyright {
             margin: $theme--spacing * 2;
+            text-align: right;
         }
     }
 }
