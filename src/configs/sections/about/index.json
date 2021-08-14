@@ -46,17 +46,30 @@
     },
     {
         "prompt": "Hemanth.languages",
-        "result": ["English","Telugu", "Hindi"],
+        "result": [
+            "English",
+            "Telugu",
+            "Hindi"
+        ],
         "preprocess": "(result) => JSON.stringify(result)"
     },
     {
         "prompt": "Hemanth.interests",
-        "result": ["Coding", "Cycling", "Listening to Music", "Reading Books"],
+        "result": [
+            "Coding",
+            "Cycling",
+            "Listening to Music",
+            "Reading Books"
+        ],
         "preprocess": "(result) => JSON.stringify(result)"
     },
     {
         "prompt": "Hemanth.strengths",
-        "result": ["I Never Give Up", "Autodidact", "Quick Learner"],
+        "result": [
+            "I Never Give Up",
+            "Autodidact",
+            "Quick Learner"
+        ],
         "preprocess": "(result) => JSON.stringify(result)"
     }
 ]
