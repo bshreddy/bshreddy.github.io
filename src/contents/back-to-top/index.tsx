@@ -4,7 +4,7 @@ import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Zoom from '@material-ui/core/Zoom';
 
-import './styles/BackToTop.scss'
+import 'styles/back-to-top/index.scss';
 
 type BackToTopProps = {
   window?: () => Window;

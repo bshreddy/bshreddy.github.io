@@ -3,13 +3,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-import { default as NavBarToolbar } from './NavBar/Toolbar'
-import { default as NavBarToolbarMenu } from './NavBar/ToolbarMenu'
-import { default as NavBarToolbarMobileMenu } from './NavBar/ToolbarMobileMenu'
+import { default as NavBarToolbar } from './Toolbar'
+import { default as NavBarToolbarMenu } from './ToolbarMenu'
+import { default as NavBarToolbarMobileMenu } from './ToolbarMobileMenu'
 
-import { Section } from '../types';
+import { Section } from 'apps/types';
 
-import './styles/NavBar.scss';
+import 'styles/navbar/index.scss';
 
 type NavBarProps = {
   sections: Array<Section>;

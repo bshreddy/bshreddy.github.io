@@ -1,8 +1,6 @@
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { Section } from '../../types';
-
-import '../styles/NavBar.scss';
+import { Section } from 'apps/types';
 
 type ToolbarMenuProps = {
   id: string;

@@ -1,4 +1,4 @@
-@import '../../styles/base.scss';
+@import 'styles/base.scss';
 
 .hero-image {
     // background-image: url('../../static/images/hero-image.jpg');
@@ -7,7 +7,7 @@
     background-size: cover;
     position: relative;
     height: 100%;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;

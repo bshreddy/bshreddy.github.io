@@ -1,9 +1,9 @@
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { ApolloError } from "@apollo/client";
-import { getRandomInt } from '../../helpers';
+import { getRandomInt } from 'apps/helpers';
 
-import jsonData from '../../../../src1/json/ProjectsError.json';
+import jsonData from 'configs/sections/projects/error.json';
 
 type ErrorProps = {
   error: ApolloError | undefined;

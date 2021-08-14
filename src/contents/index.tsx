@@ -1,26 +1,26 @@
-import NavBar from '../src1/components/NavBar';
-import BackToTop from './back-to-top';
-import {SectionComponents} from './sections';
-import sections from '../src1/json/sections.json';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from 'contents/App';
+import reportWebVitals from 'apps/vitals/reportWebVitals';
+import { StylesProvider, ThemeProvider } from '@material-ui/core/styles';
+import { ApolloProvider } from "@apollo/client";
 
-import './styles/App.scss';
+import { theme } from 'apps/theme'
+import { graphqlClient } from 'apps/graphql';
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar
-        sections={sections.slice(1)}
-      />
+import 'styles';
 
-      <div className="container">
-        {sections.map((section) =>
-          <>{SectionComponents[section.name]}</>
-        )}
-      </div>
+ReactDOM.render(
+  <ThemeProvider theme={theme}>
+    <StylesProvider injectFirst>
+      <ApolloProvider client={graphqlClient}>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </ApolloProvider>
+    </StylesProvider>
+  </ThemeProvider>,
+  document.getElementById('root')
+);
 
-      <BackToTop goto={sections[0].id} />
-    </div>
-  );
-}
-
-export default App;
+reportWebVitals(console.log);

@@ -1,4 +1,4 @@
-@import '../../styles/base.scss';
+@import 'styles/base.scss';
 
 .navbar {
     height: 64px;
@@ -10,21 +10,21 @@
     .navbar-grow {
         flex-grow: 1;
     }
-    
+
     .navbar-menu-button {
         margin-right: $theme--spacing * 2;
         color: inherit;
     }
-    
+
     .navbar-title {
         display: block;
     }
-    
+
     .navbar-search-input-input {
         padding: $theme--spacing * 1 $theme--spacing * 1 $theme--spacing * 1 $theme--spacing * 0;
         padding-left: calc(1em + #{$theme--spacing * 4});
         transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-            
+
         width: 100%;
         @include respond-above(sm) {
             width: 20ch;
@@ -32,14 +32,14 @@
                 width: 25ch;
             }
         }
-    
+
         @include respond-above(md) {
             width: 30ch;
             &:focus {
                 width: 40ch;
             }
         }
-    
+
         @include respond-above(lg) {
             width: 40ch;
             &:focus {
@@ -47,28 +47,28 @@
             }
         }
     }
-    
+
     .navbar-section-desktop {
         display: none;
-    
+
         @include respond-above(md) {
             display: flex;
         }
-        
+
         .navbar-button {
             color: $text-on-primary;
-    
+
             .MuiButton-label {
                 text-transform: capitalize;
             }
         }
     }
-      
+
     .navbar-section-mobile {
         display: flex;
-    
+
         @include respond-above(md) {
             display: none;
         }
-    }    
+    }
 }

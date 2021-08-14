@@ -7,7 +7,7 @@ import GridListTile from '@material-ui/core/GridListTile';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 
-import { ProjectsQueryResult } from '../../graphql';
+import { ProjectsQueryResult } from 'apps/graphql';
 
 type ListProps = {
   loading: boolean;

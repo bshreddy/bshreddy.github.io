@@ -1,9 +1,7 @@
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import { Section } from '../../types';
-
-import '../styles/NavBar.scss';
+import { Section } from 'apps/types';
 
 type ToolbarProps = {
   menuId: string;

@@ -3,8 +3,8 @@ import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 
-import socials from '../json/socials.json';
-import "./styles/Contact.scss";
+import socials from 'configs/sections/contact/index.json';
+import "styles/sections/contact/index.scss";
 
 function Contact() {
   const social_icon_baseurl = `${process.env.PUBLIC_URL}/images/socials`

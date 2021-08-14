@@ -1,11 +1,12 @@
 import { useQuery } from "@apollo/client";
-import {default as ProjectsLoading} from '../components/Projects/Loading';
-import {default as ProjectsError} from '../components/Projects/Error';
-import {default as ProjectsList} from '../components/Projects/List';
-import { GithubReposQuery, ProjectsQueryResult } from '../graphql';
+import {default as ProjectsLoading} from './Loading';
+import {default as ProjectsError} from './Error';
+import {default as ProjectsList} from './List';
 
-import fixtures from '../json/ProjectsList.json';
-import './styles/Projects.scss';
+import { GithubReposQuery, ProjectsQueryResult } from 'apps/graphql';
+
+import fixtures from 'configs/sections/projects/list.json';
+import 'styles/sections/projects/index.scss';
 
 function Projects() {
   const queryParams = Object.fromEntries((window.location.href.split('?')[1] || '').split('&').map((item) => item.split('=')))

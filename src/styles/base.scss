@@ -93,11 +93,11 @@ $breakpoints: (
 @mixin import-font($family, $filename, $font-weight) {
     @font-face {
         font-family: $family;
-        src: url("../static/fonts/#{$filename}");
+        src: url("/assets/fonts/#{$filename}");
         font-weight: $font-weight;
     }
 }
-  
+
 @include google-font("Marck+Script");
 @include import-font("SF Pro Display", "SF-Pro-Display-Regular.otf", regular);
 @include import-font("SF Mono", "SFMono-Regular.otf", regular);
