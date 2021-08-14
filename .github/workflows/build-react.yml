@@ -55,13 +55,17 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+
+      - name: List files
+        run: ls -la
 
       - name: Setup Git
         run: |
           git config --global user.name ${{ secrets.USERNAME }}
           git config --global user.email ${{ secrets.EMAIL }}
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git switch -c gh-pages
 
       - name: Get artifact
         uses: actions/download-artifact@v2
@@ -71,8 +75,8 @@ jobs:
 
       - name: Commit Build
         run: |
-          rm -r docs
+          rm -rf docs
           mv build docs
           git add docs
           git commit -am "Automated React Build for Deploy"
-          git push
+          git push -u origin gh-pages
