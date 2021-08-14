@@ -5,9 +5,9 @@ import About from "./about";
 import Contact from "./contact";
 
 export const SectionComponents: { [key: string]: JSX.Element; }  = {
-  "Hero": <Hero />,
-  "Projects": <Projects />,
-  "Skills": <Skills />,
-  "About": <About />,
-  "Contact": <Contact />,
+  "hero": <Hero />,
+  "projects": <Projects />,
+  "skills": <Skills />,
+  "about": <About />,
+  "contact": <Contact />,
 }

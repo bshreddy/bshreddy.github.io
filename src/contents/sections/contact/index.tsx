@@ -10,29 +10,27 @@ function Contact() {
   const social_icon_baseurl = `${process.env.PUBLIC_URL}/images/socials`
 
   return (
-    <section key="contact" id="contact" className="child">
-      <div className="contact-root">
-        <Container maxWidth="sm" className="container">
-          <div className="title-container">
-            <Typography variant="h3" gutterBottom align="center" className="title">Get In Touch</Typography>
-            <Typography variant="h6" gutterBottom align="center" className="subtitle">
-              My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to DM me about any relevant job updates.
-            </Typography>
-          </div>
+    <div className="contact-root">
+      <Container maxWidth="sm" className="container">
+        <div className="title-container">
+          <Typography variant="h3" gutterBottom align="center" className="title">Get In Touch</Typography>
+          <Typography variant="h6" gutterBottom align="center" className="subtitle">
+            My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to DM me about any relevant job updates.
+          </Typography>
+        </div>
 
-          <div className="social-container">
-            {socials.map((social) =>
-              <Card key={social.id} className="social-card" elevation={4}>
-                <CardActionArea className="social-card-action" href={social.link}>
-                  <img src={`${social_icon_baseurl}/${social.filename}`} alt={`link to ${social.name}`} />
-                  <Typography variant="subtitle1" align="center" component="span">{social.name}</Typography>
-                </CardActionArea>
-              </Card>
-            )}
-          </div>
-        </Container>
-      </div>
-    </section>
+        <div className="social-container">
+          {socials.map((social) =>
+            <Card key={social.id} className="social-card" elevation={4}>
+              <CardActionArea className="social-card-action" href={social.link}>
+                <img src={`${social_icon_baseurl}/${social.filename}`} alt={`link to ${social.name}`} />
+                <Typography variant="subtitle1" align="center" component="span">{social.name}</Typography>
+              </CardActionArea>
+            </Card>
+          )}
+        </div>
+      </Container>
+    </div>
   );
 }
 

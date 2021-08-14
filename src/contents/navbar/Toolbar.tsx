@@ -15,7 +15,7 @@ function Toolbar({menuId, mobileMenuId, onMobileMenuOpen, sections}: ToolbarProp
     <>
       <div className='navbar-section-desktop'>
         {sections.map((section) =>
-          <Button key={section.id} variant="text" className="navbar-button">{section.name}</Button>
+          <Button key={section.id} variant="text" className="navbar-button" href={`#${section.id}`}>{section.name}</Button>
         )}
       </div>
 

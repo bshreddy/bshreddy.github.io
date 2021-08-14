@@ -4,14 +4,12 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 
 function Loading() {
   return (
-    <section key="projects" id="projects" className="child">
-      <Container maxWidth="sm" className="projects-loading-root">
-        <div className="projects-loading">
-          <CircularProgress color="secondary" size={48} className="spinner" />
-          <Typography variant="caption" component="div" className="technical-message">Loading projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
-        </div>
-      </Container>
-    </section>
+    <Container maxWidth="sm" className="projects-loading-root">
+      <div className="projects-loading">
+        <CircularProgress color="secondary" size={48} className="spinner" />
+        <Typography variant="caption" component="div" className="technical-message">Loading projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
+      </div>
+    </Container>
   );
 }
 

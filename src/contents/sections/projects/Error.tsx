@@ -17,18 +17,17 @@ function Error({ error }: ErrorProps) {
   const message = messages[getRandomInt(messages.length)];
 
   return (
-    <section key="projects" id="projects" className="child">
-      <Container maxWidth="sm" className="projects-error-root">
-        <div className="projects-error">
-          <Typography variant="h3" gutterBottom className="title">{title} {emoji}</Typography>
-          <Typography variant="h6" gutterBottom className="message">{message}</Typography>
+    <Container maxWidth="sm" className="projects-error-root">
+      <div className="projects-error">
+        <Typography variant="h3" gutterBottom className="title">{title} {emoji}</Typography>
+        <Typography variant="h6" gutterBottom className="message">{message}</Typography>
 
 
-          <Typography variant="subtitle2" className="technical-message">Unable to retrive projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
-          <Typography variant="caption" className="error-message">Error: {(error) ? error.message : "Unknown Error"}</Typography>
-        </div>
-      </Container>
-    </section>
+        <Typography variant="subtitle2" className="technical-message">Unable to retrive projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
+        <Typography variant="caption" className="error-message">Error: {(error) ? error.message : "Unknown Error"}</Typography>
+      </div>
+    </Container>
+
   );
 }
 
