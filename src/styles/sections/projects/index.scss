@@ -12,7 +12,7 @@
         text-align: center;
 
         .title {
-            
+
         }
 
         .technical-message {
@@ -56,5 +56,65 @@
                 text-decoration: underline;
             }
         }
+    }
+}
+
+.projects-list-root {
+    padding: $theme--spacing * 6 $theme--spacing * 2;
+    height: 100%;
+    display: flex;
+    // background-color: cyan;
+
+    .featured, .other {
+        // background-color: blue;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title-root {
+            margin-bottom: $theme--spacing *3;
+            width: 100%;
+
+            .title {
+
+            }
+
+            .subtitle {
+                color: $primary-color-light;
+
+                a {
+                    color: inherit;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .repos-root {
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
+            .repo-card-tile-root {
+
+            }
+
+            .repo-card-tile {
+                padding: $theme--spacing * 2;
+
+            }
+
+            .repo-card {
+                height: 100%;
+                padding: $theme--spacing * 2;
+                border-radius: $theme--spacing * 1;
+            }
+        }
+    }
+
+    .featured {
+        // background-color: red;
+        border-right: 1px solid $ios-systemgray4;
     }
 }

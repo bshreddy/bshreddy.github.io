@@ -1,8 +1,8 @@
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import About from "./About";
-import Contact from "./Contact";
+import Hero from "./hero";
+import Projects from "../../../src1/sections/Projects";
+import Skills from "./skills";
+import About from "../about";
+import Contact from "../contact";
 
 export const SectionComponents: { [key: string]: JSX.Element; }  = {
   "Hero": <Hero />,

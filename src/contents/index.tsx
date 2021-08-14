@@ -1,20 +1,20 @@
-import NavBar from './components/NavBar';
-import BackToTop from './components/BackToTop';
+import NavBar from '../src1/components/NavBar';
+import BackToTop from './back-to-top';
 import {SectionComponents} from './sections';
-import sections from './json/sections.json';
+import sections from '../src1/json/sections.json';
 
 import './styles/App.scss';
 
 function App() {
   return (
     <div className="App">
-      <NavBar 
+      <NavBar
         sections={sections.slice(1)}
       />
 
       <div className="container">
-        {sections.map((section) => 
-          <section key={section.id} id={section.id} className="child">{SectionComponents[section.name]}</section>
+        {sections.map((section) =>
+          <>{SectionComponents[section.name]}</>
         )}
       </div>
 
