@@ -69,6 +69,32 @@ $breakpoints: (
     } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
 }
 
+@mixin respond-above-height($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Get the breakpoint value.
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        // Write the media query.
+        @media (min-height: $breakpoint-value) { @content; }
+        // If the breakpoint doesn't exist in the map.
+    } @else if type-of($breakpoint) == number {
+        @media (min-height: $breakpoint) { @content; }
+    } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
+}
+
+@mixin respond-below-height($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Get the breakpoint value.
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        // Write the media query.
+        @media (max-height: ($breakpoint-value - 1)) { @content; }
+    // If the breakpoint doesn't exist in the map.
+    } @else if type-of($breakpoint) == number {
+        @media (max-height: $breakpoint - 1) { @content; }
+    } @else { @warn 'Invalid breakpoint: #{$breakpoint}.'; }
+}
+
 @mixin centered-flex {
     display: flex;
     justify-content: center;

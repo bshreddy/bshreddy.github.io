@@ -5,24 +5,54 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
-    .container {
+    .contact-container {
+        flex: 0 1 auto;
+        min-height: 0%;
+        overflow-y: scroll;
+        padding: 2 * $theme--spacing;
+
+        @include respond-above(sm) {
+            padding: 3 * $theme--spacing;
+        }
+
         .title-container {
             margin-bottom: 40px;
 
+            .title {
+                @include respond-below(sm) {
+                    font-size: 36px;
+                }
+            }
+
             .subtitle {
                 color: $primary-color-light;
+
+                @include respond-below(sm) {
+                    font-size: 16px;
+                }
             }
         }
 
         .social-container {
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
+
+            @include respond-above-height(780px) {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include respond-below-height(780px) {
+                align-items: center;
+                overflow-y: scroll;
+                flex-direction: row;
+            }
 
             .social-card {
                 width: 150px;
+                flex: 0 0 auto;
                 margin: $theme--spacing * 2;
                 border-radius: 50vh;
                 display: flex;

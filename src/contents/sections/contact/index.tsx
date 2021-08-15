@@ -11,7 +11,7 @@ function Contact() {
 
   return (
     <div className="contact-root">
-      <Container maxWidth="sm" className="container">
+      <Container maxWidth="sm" className="contact-container">
         <div className="title-container">
           <Typography variant="h3" gutterBottom align="center" className="title">Get In Touch</Typography>
           <Typography variant="h6" gutterBottom align="center" className="subtitle">
