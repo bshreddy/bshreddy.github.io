@@ -9,7 +9,7 @@ query GithubReposQuery {
         }
       }
     }
-    repositories(first: 100, privacy: PUBLIC, orderBy: {field: NAME, direction: ASC}) {
+    repositories(first: 100, privacy: PUBLIC, orderBy: {field: NAME, direction: ASC}, ownerAffiliations: OWNER) {
       totalCount
       nodes {
         id
