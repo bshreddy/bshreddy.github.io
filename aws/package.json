@@ -1,0 +1,21 @@
+{
+  "name": "aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "zip -r build/saihemanthbr-github-io_sync.zip .",
+    "deploy": "aws lambda update-function-code --function-name 'saihemanthbr-github-io_sync' --zip-file fileb://build/saihemanthbr-github-io_sync.zip",
+    "test": "sam local invoke 'saihemanthbrgithubiosync' -e event.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.4.7",
+    "aws-sdk": "^2.968.0",
+    "aws-xray-sdk": "^3.3.3",
+    "cross-fetch": "^3.1.4",
+    "graphql": "^15.5.1"
+  }
+}
