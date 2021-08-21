@@ -1,6 +1,5 @@
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import { ApolloError } from "@apollo/client";
 import { getRandomInt } from 'apps/helpers';
 
 import jsonData from 'configs/sections/projects/error.json';

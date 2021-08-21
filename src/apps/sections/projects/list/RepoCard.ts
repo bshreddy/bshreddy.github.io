@@ -24,3 +24,13 @@ export const getLanguages = (repo: Repository): LanguagesStripData => {
 
   return languages;
 }
+
+export const getIconType = (repo: Repository) => {
+  if (repo.isFork) {
+    return "form";
+  } else if (repo.isInOrganization) {
+    return "org";
+  } else {
+    return "default";
+  }
+}
