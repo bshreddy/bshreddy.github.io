@@ -1,0 +1,28 @@
+@import 'styles/base.scss';
+
+.projects-loading-root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .projects-loading {
+        display: inline-block;
+        text-align: center;
+
+        .spinner {
+            margin-bottom: $theme--spacing * 2.5;
+        }
+
+        .technical-message {
+            font-family: "SF Mono", 'Courier New', Courier, monospace, $default-font-families;
+            color: $primary-color-light;
+
+            a {
+                color: $primary-color-light;
+                text-decoration: underline;
+            }
+        }
+    }
+}

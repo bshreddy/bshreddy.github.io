@@ -2,6 +2,8 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+import 'styles/sections/projects/Loading.scss';
+
 function Loading() {
   return (
     <Container maxWidth="sm" className="projects-loading-root">

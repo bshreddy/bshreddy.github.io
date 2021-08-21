@@ -4,9 +4,10 @@ import { ApolloError } from "@apollo/client";
 import { getRandomInt } from 'apps/helpers';
 
 import jsonData from 'configs/sections/projects/error.json';
+import 'styles/sections/projects/Error.scss';
 
 type ErrorProps = {
-  error: ApolloError | undefined;
+  error: Error | null;
 }
 
 function Error({ error }: ErrorProps) {
@@ -24,7 +25,7 @@ function Error({ error }: ErrorProps) {
 
 
         <Typography variant="subtitle2" className="technical-message">Unable to retrive projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
-        <Typography variant="caption" className="error-message">Error: {(error) ? error.message : "Unknown Error"}</Typography>
+        <Typography variant="caption" className="error-message">Error: {error?.message ?? "Unknown Error"}</Typography>
       </div>
     </Container>
 
