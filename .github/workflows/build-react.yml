@@ -78,5 +78,5 @@ jobs:
           rm -rf docs
           mv build docs
           git add docs
-          git commit -am "Automated React Build for Deploy"
+          git commit --allow-empty -am "Automated React Build for Deploy"
           git push -u origin gh-pages
