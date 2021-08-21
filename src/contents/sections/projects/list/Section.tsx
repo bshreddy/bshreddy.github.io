@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import Typography from "@material-ui/core/Typography";
 import { Repository } from "apps/types";
+import RepoCard from "./RepoCard";
 
 import "styles/sections/projects/list/Section.scss";
 
@@ -20,7 +21,9 @@ function Section({ title, subtitle, repos }: SectionProps) {
       <hr />
       <div className="section-content">
         <div className="section-repos">
-
+          {repos.map(repo => {
+            return <RepoCard key={repo.id} repo={repo} />
+          })}
         </div>
       </div>
     </div>
