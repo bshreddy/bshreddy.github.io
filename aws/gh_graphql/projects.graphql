@@ -24,7 +24,7 @@ query GithubReposQuery {
         isArchived
         isFork
         isInOrganization
-        languages(first: 3, orderBy: {field: SIZE, direction: ASC}) {
+        languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
           nodes {
             id
             name
