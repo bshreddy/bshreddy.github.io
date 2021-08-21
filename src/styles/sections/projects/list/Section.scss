@@ -1,0 +1,37 @@
+@import 'styles/base.scss';
+
+.projects-section-root {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .section-head {
+        padding: 0 * $theme--spacing 2 * $theme--spacing;
+
+        @include respond-below(sm) {
+            padding: 0 * $theme--spacing 1 * $theme--spacing;
+        }
+
+        .section-title {
+        }
+
+        .section-subtitle {
+            color: $primary-color-light
+        }
+    }
+
+    .section-content {
+        flex: 1 1 0;
+        min-height: 0%;
+        display: flex;
+        justify-content: center;
+
+        .section-repos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+        }
+    }
+}
