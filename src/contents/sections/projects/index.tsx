@@ -28,8 +28,8 @@ function Projects() {
   }, []);
 
   if (loading) return (<Loading />);
-  if (error) return (<Error error={error} />);
-  return (<List loading={loading} data={data} />);
+  if (data) return (<List loading={loading} data={data} />);
+  return (<Error error={error} />);
 }
 
 export default (Projects);
