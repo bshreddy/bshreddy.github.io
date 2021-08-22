@@ -2,7 +2,7 @@ import axios from "axios";
 import { Repository, GithubAPIResponse, ProjectsData } from 'apps/types';
 
 export const get_projects = async () => {
-  const res = (await axios.get<GithubAPIResponse>('https://saihemanthbr-public.s3.ap-south-1.amazonaws.com/saihemanthbr-github-io/projects.json'));
+  const res = (await axios.get<GithubAPIResponse>(process.env.REACT_APP_PROJECTS_URL!));
   const data = res.data.data;
 
   const pinned_repos: Repository[] = [];
@@ -15,6 +15,7 @@ export const get_projects = async () => {
       other_repos.push(node);
     }
   });
+
 
   return {pinned_repos, other_repos} as ProjectsData;
 }

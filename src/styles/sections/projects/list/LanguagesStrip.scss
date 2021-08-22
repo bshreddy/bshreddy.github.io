@@ -1,0 +1,23 @@
+@import 'styles/base.scss';
+
+.languages-root {
+    display: flex;
+    flex-direction: column;
+
+    .language-before {
+        width: 5px;
+        height: 2 * $theme--spacing;
+        background-color: white;
+    }
+
+    .language-after {
+        width: 5px;
+        height: 2 * $theme--spacing;
+        background-color: red;
+    }
+
+    .languages {
+        width: 5px;
+        flex: 1 0 auto;
+    }
+}

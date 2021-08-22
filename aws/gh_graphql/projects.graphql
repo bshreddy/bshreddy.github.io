@@ -18,13 +18,12 @@ query GithubReposQuery {
         description
         url
         homepageUrl
-        updatedAt
         stargazerCount
         forkCount
         isArchived
         isFork
         isInOrganization
-        languages(first: 3, orderBy: {field: SIZE, direction: ASC}) {
+        languages(first: 3, orderBy: {field: SIZE, direction: DESC}) {
           nodes {
             id
             name
@@ -46,6 +45,12 @@ query GithubReposQuery {
             }
             url
           }
+        }
+        licenseInfo {
+          id
+          name
+          url
+          pseudoLicense
         }
       }
     }
