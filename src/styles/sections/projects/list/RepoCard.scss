@@ -94,11 +94,13 @@
                         text-decoration: none;
 
                         .description-body-heading {
+                            text-decoration: underline dotted $primary-color-light 1px;
                             line-height: inherit;
                             color: $primary-color-light;
                             font-family: "SF Mono", 'Courier New', Courier, monospace, $default-font-families;
                         }
                     }
+
 
                     .description-readme {
                         h1 {
