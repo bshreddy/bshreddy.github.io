@@ -56,10 +56,13 @@
 
                     a {
                         text-decoration: none;
-                    }
 
-                    .title {
-                        line-height: initial;
+                        .title {
+                            line-height: initial;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
                     }
 
                     .subtitle {
@@ -99,7 +102,17 @@
             }
 
             .content-footer {
-                // background-color: blueviolet;
+                background-color: blueviolet;
+                display: flex;
+
+                .left {
+                    background-color: red;
+                    flex: 1 0 auto;
+                }
+
+                .right {
+                    background-color: blue;
+                }
             }
 
         }

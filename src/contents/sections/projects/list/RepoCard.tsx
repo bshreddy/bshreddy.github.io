@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { useState, ReactElement } from "react";
 import Card from "@material-ui/core/Card";
 import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
@@ -24,9 +24,14 @@ const iconsTypeMap: Record<string, ReactElement> = {
 }
 
 function RepoCard({ repo }: RepoCardProps) {
+  const [elevation, setElevation] = useState(6);
+
   return (
     <div className="repo-card-root">
-      <Card className="repo-card" elevation={4}>
+      <Card className="repo-card" elevation={elevation}
+        onMouseOver={() => setElevation(24)}
+        onMouseOut={() => setElevation(6)}
+      >
         <LanguagesStrip data={getLanguages(repo)} />
         <div className="content">
           <div className="content-header">
@@ -60,7 +65,13 @@ function RepoCard({ repo }: RepoCardProps) {
           </div>
 
           <div className="content-footer">
-            footer
+            <div className="left">
+              a
+            </div>
+
+            <div className="right">
+              b
+            </div>
           </div>
         </div>
       </Card>
