@@ -8,9 +8,8 @@ import GitHubIcon from "assets/icons/GitHubIcon";
 import GitHubStarIcon from "assets/icons/GitHubStarIcon";
 import GitHubForkIcon from "assets/icons/GitHubForkIcon";
 import GitHubLicenseIcon from "assets/icons/GitHubLicenseIcon";
-import BookOutlinedIcon from '@material-ui/icons/BookOutlined';
-import BusinessOutlinedIcon from '@material-ui/icons/BusinessOutlined';
-import AccountTreeOutlinedIcon from '@material-ui/icons/AccountTreeOutlined';
+import GitHubRepoIcon from "assets/icons/GitHubRepoIcon";
+import GitHubOrgIcon from "assets/icons/GitHubOrgIcon";
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 import LanguagesStrip from "contents/sections/projects/list/LanguagesStrip";
@@ -26,9 +25,9 @@ type RepoCardProps = {
 }
 
 const iconsTypeMap: Record<string, ReactElement> = {
-  "default": <BookOutlinedIcon />,
-  "org": <BusinessOutlinedIcon />,
-  "fork": <AccountTreeOutlinedIcon />
+  "default": <GitHubRepoIcon />,
+  "org": <GitHubOrgIcon />,
+  "fork": <GitHubForkIcon />
 }
 
 function RepoCard({ repo }: RepoCardProps) {
@@ -84,6 +83,7 @@ function RepoCard({ repo }: RepoCardProps) {
           </div>
 
           <div className="content-footer">
+            {/* #TODO: Added contributers and issues open */}
             <div className="left">
               {repo.stargazerCount > 0 &&
                 <IconButton size="small" className="footer-buttons" aria-label="github stars">
