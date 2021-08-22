@@ -9,7 +9,7 @@ import { ProjectsData } from 'apps/types';
 
 function Projects() {
   const queryParams = Object.fromEntries((window.location.href.split('?')[1] || '').split('&').map((item) => item.split('=')))
-  const [data, setData] = useState(queryParams.fixtures ? (fixtures as ProjectsData) : null);
+  const [data, setData] = useState(queryParams.fixtures ? (fixtures as unknown as ProjectsData) : null);
   const [loading, setLoading] = useState(!queryParams.fixtures);
   const [error, setError] = useState<Error | null>(null);
 

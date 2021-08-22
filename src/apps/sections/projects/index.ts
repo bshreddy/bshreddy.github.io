@@ -16,5 +16,6 @@ export const get_projects = async () => {
     }
   });
 
+
   return {pinned_repos, other_repos} as ProjectsData;
 }
