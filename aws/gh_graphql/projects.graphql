@@ -18,7 +18,6 @@ query GithubReposQuery {
         description
         url
         homepageUrl
-        updatedAt
         stargazerCount
         forkCount
         isArchived
@@ -46,6 +45,12 @@ query GithubReposQuery {
             }
             url
           }
+        }
+        licenseInfo {
+          id
+          name
+          url
+          pseudoLicense
         }
       }
     }

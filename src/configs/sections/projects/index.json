@@ -14,6 +14,7 @@
                 "edges": [],
                 "nodes": []
             },
+            "licenseInfo": null,
             "name": "Kushagra",
             "nameWithOwner": "SaiHemanthBR/Kushagra",
             "readme": {
@@ -25,7 +26,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-02-25T18:42:16Z",
             "url": "https://github.com/SaiHemanthBR/Kushagra"
         },
         {
@@ -74,6 +74,13 @@
                     }
                 ]
             },
+            "licenseInfo": {
+                "__typename": "License",
+                "id": "MDc6TGljZW5zZTEz",
+                "name": "MIT License",
+                "pseudoLicense": false,
+                "url": "http://choosealicense.com/licenses/mit/"
+            },
             "name": "nanows",
             "nameWithOwner": "SaiHemanthBR/nanows",
             "readme": {
@@ -102,7 +109,6 @@
                 ]
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-08-08T14:28:58Z",
             "url": "https://github.com/SaiHemanthBR/nanows"
         },
         {
@@ -151,6 +157,13 @@
                     }
                 ]
             },
+            "licenseInfo": {
+                "__typename": "License",
+                "id": "MDc6TGljZW5zZTA=",
+                "name": "Other",
+                "pseudoLicense": true,
+                "url": "http://choosealicense.com/licenses/other/"
+            },
             "name": "saihemanthbr.github.io",
             "nameWithOwner": "SaiHemanthBR/saihemanthbr.github.io",
             "readme": {
@@ -162,7 +175,6 @@
                 "nodes": []
             },
             "stargazerCount": 2,
-            "updatedAt": "2021-08-21T07:51:52Z",
             "url": "https://github.com/SaiHemanthBR/saihemanthbr.github.io"
         },
         {
@@ -211,6 +223,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "Sputify",
             "nameWithOwner": "SaiHemanthBR/Sputify",
             "readme": null,
@@ -219,7 +232,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-07-27T13:39:22Z",
             "url": "https://github.com/SaiHemanthBR/Sputify"
         }
     ],
@@ -260,6 +272,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "Kushagra-AI",
             "nameWithOwner": "SaiHemanthBR/Kushagra-AI",
             "readme": {
@@ -271,7 +284,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2020-08-16T18:23:45Z",
             "url": "https://github.com/SaiHemanthBR/Kushagra-AI"
         },
         {
@@ -300,6 +312,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "Kushagra-Android",
             "nameWithOwner": "SaiHemanthBR/Kushagra-Android",
             "readme": {
@@ -311,7 +324,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-01-17T11:59:15Z",
             "url": "https://github.com/SaiHemanthBR/Kushagra-Android"
         },
         {
@@ -360,6 +372,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "Kushagra-iOS",
             "nameWithOwner": "SaiHemanthBR/Kushagra-iOS",
             "readme": {
@@ -371,7 +384,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-02-25T18:33:26Z",
             "url": "https://github.com/SaiHemanthBR/Kushagra-iOS"
         },
         {
@@ -400,6 +412,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "Kushagra-Report",
             "nameWithOwner": "SaiHemanthBR/Kushagra-Report",
             "readme": {
@@ -411,7 +424,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-01-17T11:51:35Z",
             "url": "https://github.com/SaiHemanthBR/Kushagra-Report"
         },
         {
@@ -460,6 +472,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "PhysicsSims",
             "nameWithOwner": "SaiHemanthBR/PhysicsSims",
             "readme": {
@@ -471,7 +484,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-06-23T12:55:25Z",
             "url": "https://github.com/SaiHemanthBR/PhysicsSims"
         },
         {
@@ -510,6 +522,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "SkyRegion",
             "nameWithOwner": "SaiHemanthBR/SkyRegion",
             "readme": {
@@ -521,7 +534,6 @@
                 "nodes": []
             },
             "stargazerCount": 4,
-            "updatedAt": "2021-06-19T11:41:39Z",
             "url": "https://github.com/SaiHemanthBR/SkyRegion"
         },
         {
@@ -560,6 +572,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "TextClassifier-FlaskWebApp",
             "nameWithOwner": "SaiHemanthBR/TextClassifier-FlaskWebApp",
             "readme": null,
@@ -601,7 +614,6 @@
                 ]
             },
             "stargazerCount": 1,
-            "updatedAt": "2020-12-16T03:40:14Z",
             "url": "https://github.com/SaiHemanthBR/TextClassifier-FlaskWebApp"
         },
         {
@@ -640,6 +652,7 @@
                     }
                 ]
             },
+            "licenseInfo": null,
             "name": "Todo-ReactNative",
             "nameWithOwner": "SaiHemanthBR/Todo-ReactNative",
             "readme": {
@@ -651,7 +664,6 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "updatedAt": "2021-06-19T11:44:29Z",
             "url": "https://github.com/SaiHemanthBR/Todo-ReactNative"
         }
     ]

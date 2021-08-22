@@ -41,6 +41,13 @@ export type RepositoryTopics = {
   nodes: Array<RepositoryTopicNode>;
 };
 
+export type LicenseInfo = {
+  id: string;
+  name: string;
+  pseudoLicense: boolean;
+  url: string;
+};
+
 export type Repository = {
   id: string;
   name: string;
@@ -48,15 +55,15 @@ export type Repository = {
   description?: string;
   url: string;
   homepageUrl?: string;
-  updatedAt?: string;
   stargazerCount: number;
   forkCount: number;
   isArchived: boolean;
   isFork: boolean;
   isInOrganization: boolean;
   languages: Languages;
-  readme: Readme;
+  readme?: Readme;
   repositoryTopics: RepositoryTopics;
+  licenseInfo?: LicenseInfo;
 };
 
 export type GithubUser = {
@@ -74,7 +81,7 @@ export type ProjectsQueryResult = {
 };
 
 
-export type GithubAPIResponse =  {
+export type GithubAPIResponse = {
   data: ProjectsQueryResult
 }
 
