@@ -9,6 +9,10 @@
     .about-head {
         padding: 0 * $theme--spacing 3 * $theme--spacing;
 
+        @include respond-below(sm)  {
+            padding: 0 * $theme--spacing 2 * $theme--spacing;
+        }
+
         .about-title {
         }
 
