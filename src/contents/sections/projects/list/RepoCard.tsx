@@ -21,7 +21,9 @@ import "styles/sections/projects/list/RepoCard.scss";
 
 
 type RepoCardProps = {
-  repo: Repository
+  repo: Repository,
+  elevation: number,
+  hoverElevation: number
 }
 
 const iconsTypeMap: Record<string, ReactElement> = {
@@ -30,14 +32,14 @@ const iconsTypeMap: Record<string, ReactElement> = {
   "fork": <GitHubForkIcon />
 }
 
-function RepoCard({ repo }: RepoCardProps) {
-  const [elevation, setElevation] = useState(6);
+function RepoCard({ repo, elevation, hoverElevation }: RepoCardProps) {
+  const [cardElevation, setCardElevation] = useState(elevation);
 
   return (
     <div className="repo-card-root">
-      <Card className="repo-card" elevation={elevation}
-        onMouseOver={() => setElevation(24)}
-        onMouseOut={() => setElevation(6)}
+      <Card className="repo-card" elevation={cardElevation}
+        onMouseOver={() => setCardElevation(hoverElevation)}
+        onMouseOut={() => setCardElevation(elevation)}
       >
         <LanguagesStrip data={getLanguages(repo)} />
         <div className="content">
@@ -148,5 +150,10 @@ function RepoCard({ repo }: RepoCardProps) {
     </div>
   );
 }
+
+RepoCard.defaultProps = {
+  elevation: 6,
+  hoverElevation: 24
+};
 
 export default RepoCard;
