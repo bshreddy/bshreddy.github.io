@@ -20,8 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: cancel
     env:
-      REACT_APP_GRAPHQL_URL: ${{ secrets.REACT_APP_GRAPHQL_URL }}
-      REACT_APP_GITHUB_TOKEN: ${{ secrets.REACT_APP_GITHUB_TOKEN }}
+      REACT_APP_PROJECTS_URL: ${{ secrets.REACT_APP_PROJECTS_URL }}
 
     steps:
       - name: Checkout Repository
