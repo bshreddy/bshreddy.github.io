@@ -4,13 +4,19 @@
         "result": "\"Hyderabad, Telangana, India\""
     },
     {
-        "prompt": "Hemanth.origin",
+        "prompt": "Hemanth.experience",
         "result": [
             {
-                "organization": "Oracle Corporation",
                 "job title": "Associate Software Engineer",
+                "organization": "Oracle Corporation",
                 "location": "Hyderabad, Telangana, India",
                 "time": "Jul 2021 - Present"
+            },
+            {
+                "job title": "Project Intern",
+                "organization": "Oracle Corporation",
+                "location": "Hyderabad, Telangana, India",
+                "time": "Jan 2021 - Jun 2021"
             }
         ],
         "preprocess": "(result) => JSON.stringify(result, null, 2)"
@@ -28,7 +34,7 @@
         "prompt": "Hemanth.resume",
         "result_attr": {
             "dangerouslySetInnerHTML": {
-                "__html": "<a href={`${process.env.PUBLIC_URL}/static/resume.pdf`}>résumé.pdf</a>"
+                "__html": "<a href='/static/resume.pdf'>résumé.pdf</a>"
             }
         }
     },
@@ -58,7 +64,6 @@
         "result": [
             "Coding",
             "Cycling",
-            "Listening to Music",
             "Reading Books"
         ],
         "preprocess": "(result) => JSON.stringify(result)"
@@ -66,7 +71,6 @@
     {
         "prompt": "Hemanth.strengths",
         "result": [
-            "I Never Give Up",
             "Autodidact",
             "Quick Learner"
         ],
