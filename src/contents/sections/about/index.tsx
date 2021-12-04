@@ -1,8 +1,8 @@
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
-import about_json from "configs/sections/about/index.json"
-import "styles/sections/about/index.scss"
+import about_json from "configs/sections/about/index.json";
+import "styles/sections/about/index.scss";
 
 function About() {
   return (
