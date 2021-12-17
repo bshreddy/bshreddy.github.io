@@ -21,6 +21,8 @@ jobs:
     needs: cancel
     env:
       REACT_APP_PROJECTS_URL: ${{ secrets.REACT_APP_PROJECTS_URL }}
+      REACT_APP_ABOUT_URL: ${{ secrets.REACT_APP_ABOUT_URL }}
+      REACT_APP_SKILLS_URL: ${{ secrets.REACT_APP_SKILLS_URL }}
 
     steps:
       - name: Checkout Repository
