@@ -34,7 +34,7 @@
         "prompt": "Hemanth.resume",
         "result_attr": {
             "dangerouslySetInnerHTML": {
-                "__html": "<a href='/static/resume.pdf'>résumé.pdf</a>"
+                "__html": "<a href='https://saihemanthbr-public.s3.ap-south-1.amazonaws.com/saihemanthbr-github-io/resume.pdf'>résumé.pdf</a>"
             }
         }
     },
