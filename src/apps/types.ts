@@ -89,3 +89,16 @@ export type ProjectsData = {
   pinned_repos: Array<Repository>;
   other_repos: Array<Repository>;
 }
+
+export type AboutData = Array<{
+  prompt: string;
+  result: any;
+  result_attr: any;
+  preprocess: string;
+}>;
+
+export type SkillsData = Array<{
+  id: string;
+  title: any;
+  skills: Array<string>;
+}>;
