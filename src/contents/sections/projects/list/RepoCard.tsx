@@ -4,6 +4,7 @@ import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
+import { marked } from "marked";
 import GitHubIcon from "assets/icons/GitHubIcon";
 import GitHubStarIcon from "assets/icons/GitHubStarIcon";
 import GitHubForkIcon from "assets/icons/GitHubForkIcon";
@@ -15,10 +16,8 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import LanguagesStrip from "contents/sections/projects/list/LanguagesStrip";
 import { Repository } from "apps/types";
 import { getLanguages, getIconType } from "apps/sections/projects/list/RepoCard";
-import marked from "marked";
 
 import "styles/sections/projects/list/RepoCard.scss";
-
 
 type RepoCardProps = {
   repo: Repository,
@@ -67,7 +66,7 @@ function RepoCard({ repo, elevation, hoverElevation }: RepoCardProps) {
                 <Link href={repo.url}>
                   <Typography variant="caption" className="description-body-heading">README.md</Typography>
                 </Link>
-                <div className="description-readme" dangerouslySetInnerHTML={{__html: marked(repo.readme.text, { breaks: true })}}></div>
+                <div className="description-readme" dangerouslySetInnerHTML={{__html: marked.parse(repo.readme.text, { breaks: true })}}></div>
               </div>
             }
           </div>
