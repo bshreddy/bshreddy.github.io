@@ -106,4 +106,3 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
           SOURCE_DIR: ${{ secrets.SOURCE_DIR }}
-          DEST_DIR: ${{ secrets.DEST_DIR }}
