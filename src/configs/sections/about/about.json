@@ -1,0 +1,80 @@
+[
+    {
+        "prompt": "Hemanth.experience",
+        "result": [
+            {
+                "job title": "Software Development Engineer - I",
+                "organization": "Amazon.com, Inc.",
+                "location": "Hyderabad, Telangana, India",
+                "time": "Feb 2022 - Present"
+            },
+            {
+                "job title": "Associate Software Engineer",
+                "organization": "Oracle Corporation",
+                "location": "Hyderabad, Telangana, India",
+                "time": "Jul 2021 - Feb 2022"
+            }
+        ],
+        "preprocess": "(result) => JSON.stringify(result, null, 2)"
+    },
+    {
+        "prompt": "Hemanth.education",
+        "result": {
+            "institute": "CVR College of Engineering",
+            "major": "Computer Science and Engineering (CSE)",
+            "graduation": "2021"
+        },
+        "preprocess": "(result) => JSON.stringify(result, null, 2)"
+    },
+    {
+        "prompt": "Hemanth.resume",
+        "result_attr": {
+            "dangerouslySetInnerHTML": {
+                "__html": "<a href='https://saihemanthbr-public.s3.ap-south-1.amazonaws.com/bshreddy/Resume.pdf'>résumé.pdf</a>"
+            }
+        }
+    },
+    {
+        "prompt": "Hemanth.contact.linkedin",
+        "result_attr": {
+            "dangerouslySetInnerHTML": {
+                "__html": "<a href='https://www.linkedin.com/in/bshreddy/'>linkedin.com/in/bshreddy/</a>"
+            }
+        }
+    },
+    {
+        "prompt": "Hemanth.age",
+        "preprocess": "() => Math.abs((new Date(Date.now() - (new Date('1999/07/15')).getTime())).getUTCFullYear() - 1970)"
+    },
+    {
+        "prompt": "Hemanth.languages",
+        "result": [
+            "English",
+            "Telugu",
+            "Hindi"
+        ],
+        "preprocess": "(result) => JSON.stringify(result)"
+    },
+    {
+        "prompt": "Hemanth.interests",
+        "result": [
+            "Coding",
+            "Cycling",
+            "Formula 1",
+            "Reading Books"
+        ],
+        "preprocess": "(result) => JSON.stringify(result)"
+    },
+    {
+        "prompt": "Hemanth.strengths",
+        "result": [
+            "Autodidact",
+            "Quick Learner"
+        ],
+        "preprocess": "(result) => JSON.stringify(result)"
+    },
+    {
+        "prompt": "Hemanth.origin",
+        "result": "\"Hyderabad, Telangana, India\""
+    }
+]

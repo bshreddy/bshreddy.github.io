@@ -9,7 +9,7 @@ function Loading() {
     <Container maxWidth="sm" className="projects-loading-root">
       <div className="projects-loading">
         <CircularProgress color="secondary" size={48} className="spinner" />
-        <Typography variant="caption" component="div" className="technical-message">Loading projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
+        <Typography variant="caption" component="div" className="technical-message">Loading projects from <a href="https://github.com/bshreddy">github.com/bshreddy</a>.</Typography>
       </div>
     </Container>
   );

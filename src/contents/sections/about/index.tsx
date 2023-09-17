@@ -30,7 +30,7 @@ function About() {
       <hr />
       <div className="about-content">
         <Container maxWidth="md" className="about-terminal">
-          <div className="title-bar">saihemanthbr - aboutme</div>
+          <div className="title-bar">bshreddy - aboutme</div>
           <div className="body">
             <dl>
               {

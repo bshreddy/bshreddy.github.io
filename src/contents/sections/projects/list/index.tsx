@@ -23,7 +23,7 @@ function List({ loading, data }: ListProps) {
       <div className="projects-list-section other">
         <Section
           title="Other Projects"
-          subtitle={<>View All Repositories on <a href='https://github.com/SaiHemanthBR'>My GitHub</a></>}
+          subtitle={<>View All Repositories on <a href='https://github.com/bshreddy'>My GitHub</a></>}
           repos={data.other_repos}
         />
       </div>

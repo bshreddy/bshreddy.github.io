@@ -23,7 +23,7 @@ function Error({ error }: ErrorProps) {
         <Typography variant="h6" gutterBottom className="message">{message}</Typography>
 
 
-        <Typography variant="subtitle2" className="technical-message">Unable to retrive projects from <a href="https://github.com/SaiHemanthBR">github.com/SaiHemanthBR</a>.</Typography>
+        <Typography variant="subtitle2" className="technical-message">Unable to retrive projects from <a href="https://github.com/bshreddy">github.com/bshreddy</a>.</Typography>
         <Typography variant="caption" className="error-message">Error: {error?.message ?? "Unknown Error"}</Typography>
       </div>
     </Container>

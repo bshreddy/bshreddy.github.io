@@ -16,23 +16,23 @@
             },
             "licenseInfo": null,
             "name": "Kushagra",
-            "nameWithOwner": "SaiHemanthBR/Kushagra",
+            "nameWithOwner": "bshreddy/Kushagra",
             "readme": {
                 "__typename": "Blob",
-                "text": "# Kushagra - AI-powered Mobile App\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\n<br>\n\n## Submodules\n  |Repository|Description|\n  |----------|-----------|\n  |[AI](https://github.com/SaiHemanthBR/Kushagra-AI/)|Inference Server for Image Classification Model.|\n  |[iOS](https://github.com/SaiHemanthBR/Kushagra-iOS/)|iOS Application developed in this project.|\n  |[Android](https://github.com/SaiHemanthBR/Kushagra-Android/)|Android Application developed in this project.|\n  |[Report](https://github.com/SaiHemanthBR/Kushagra-Report/)|Repository for the academic report that was submited with this project.|\n\n<br><br>\n\n## Contributers\n  * [SaiHemanthBR](https://github.com/SaiHemanthBR/)\n  * [nikhiltadikonda](https://github.com/nikhiltadikonda/)\n  * [Kalyan1999](https://github.com/Kalyan1999/)"
+                "text": "# Kushagra - AI-powered Mobile App\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\n<br>\n\n## Submodules\n  |Repository|Description|\n  |----------|-----------|\n  |[AI](https://github.com/bshreddy/Kushagra-AI/)|Inference Server for Image Classification Model.|\n  |[iOS](https://github.com/bshreddy/Kushagra-iOS/)|iOS Application developed in this project.|\n  |[Android](https://github.com/bshreddy/Kushagra-Android/)|Android Application developed in this project.|\n  |[Report](https://github.com/bshreddy/Kushagra-Report/)|Repository for the academic report that was submited with this project.|\n\n<br><br>\n\n## Contributers\n  * [bshreddy](https://github.com/bshreddy/)\n  * [nikhiltadikonda](https://github.com/nikhiltadikonda/)\n  * [Kalyan1999](https://github.com/Kalyan1999/)"
             },
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Kushagra"
+            "url": "https://github.com/bshreddy/Kushagra"
         },
         {
             "__typename": "Repository",
             "description": "Nano Web Server is a simple, multi-threaded, web server written using POSIX Sockets.",
             "forkCount": 0,
-            "homepageUrl": "https://saihemanthbr.github.io/nanows/html/",
+            "homepageUrl": "https://bshreddy.github.io/nanows/html/",
             "id": "MDEwOlJlcG9zaXRvcnkzMjUzMDYyNDk=",
             "isArchived": false,
             "isFork": false,
@@ -82,7 +82,7 @@
                 "url": "http://choosealicense.com/licenses/mit/"
             },
             "name": "nanows",
-            "nameWithOwner": "SaiHemanthBR/nanows",
+            "nameWithOwner": "bshreddy/nanows",
             "readme": {
                 "__typename": "Blob",
                 "text": "# Nano Web Server\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE.md)\n\nNano Web Server is a simple, multi-threaded, web server written using POSIX Sockets. Uses a process-driven approach and creates a new thread for each request. This web server can only host simple static webpages with no server-size processing. As of v2, it does not conform to any HTTP protocol. This is a learning project and is not intended to be used in a production environment.\n\nI might implement HTTP protocol standards later, but no guarantees.\n"
@@ -109,13 +109,13 @@
                 ]
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/nanows"
+            "url": "https://github.com/bshreddy/nanows"
         },
         {
             "__typename": "Repository",
             "description": "Personal Website.",
             "forkCount": 0,
-            "homepageUrl": "https://saihemanthbr.github.io",
+            "homepageUrl": "https://bshreddy.github.io",
             "id": "MDEwOlJlcG9zaXRvcnkyNDk0OTU2MTE=",
             "isArchived": false,
             "isFork": false,
@@ -164,8 +164,8 @@
                 "pseudoLicense": true,
                 "url": "http://choosealicense.com/licenses/other/"
             },
-            "name": "saihemanthbr.github.io",
-            "nameWithOwner": "SaiHemanthBR/saihemanthbr.github.io",
+            "name": "bshreddy.github.io",
+            "nameWithOwner": "bshreddy/bshreddy.github.io",
             "readme": {
                 "__typename": "Blob",
                 "text": "# Personal Website"
@@ -175,7 +175,7 @@
                 "nodes": []
             },
             "stargazerCount": 2,
-            "url": "https://github.com/SaiHemanthBR/saihemanthbr.github.io"
+            "url": "https://github.com/bshreddy/bshreddy.github.io"
         },
         {
             "__typename": "Repository",
@@ -225,14 +225,14 @@
             },
             "licenseInfo": null,
             "name": "Sputify",
-            "nameWithOwner": "SaiHemanthBR/Sputify",
+            "nameWithOwner": "bshreddy/Sputify",
             "readme": null,
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Sputify"
+            "url": "https://github.com/bshreddy/Sputify"
         }
     ],
     "other_repos": [
@@ -274,17 +274,17 @@
             },
             "licenseInfo": null,
             "name": "Kushagra-AI",
-            "nameWithOwner": "SaiHemanthBR/Kushagra-AI",
+            "nameWithOwner": "bshreddy/Kushagra-AI",
             "readme": {
                 "__typename": "Blob",
-                "text": "# Kushagra - AI-powered Mobile App - Inference Server\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the Inference Server that performs image classification on images captured by the user.\n\nMain Project Repo: [https://github.com/SaiHemanthBR/Kushagra](https://github.com/SaiHemanthBR/Kushagra)\n\n## Endpoints\n  * [POST] `/crop` - classifies image into one of 10 crop classes. <br>\n    ```Content-Type: multipart/form-data```\n    \n    Query Parameters <br>\n    |Parameter|Description|Type|\n    |---------|-----------|----|\n    |img|Image of the crop that needs to be classfied.|Image File|\n    \n    <br>\n\n    Response Object <br>\n    |Object|Data Type|Description|\n    |------|---------|-----------|\n    |pred|integer|Index of Predicted Class. (Index of largest element in `cnf` array.)|\n    |cnf|array[double]|Confidence of prediction for each index. values of Softmax of last layer of the ResNet model.|\n    |kind|string|Value: `\"crop\"`<br>Kind of prediction. (crop\\|disease)|\n\n\n    <br><br>\n\n  * [POST] `/disease` - classifies image into one of 37 crop diseases. <br>\n    ```Content-Type: multipart/form-data```\n    \n    Query Parameters <br>\n    |Parameter|Description|Type|\n    |---------|-----------|----|\n    |img|Image of the crop that needs to be classfied.|Image File|\n\n    <br>\n\n    Response Object <br>\n    |Object|Data Type|Description|\n    |------|---------|-----------|\n    |pred|integer|Index of Predicted Class. (Index of largest element in `cnf` array.)|\n    |cnf|array[double]|LogSoftmax values of last layer of the ResNet model.|\n    |kind|string|Value: `\"disease\"`<br>Kind of prediction. (crop\\|disease)|\n\n    <br><br>\n\n## Installation (Docker) (Recommended)\n  1. To Build: <br />\n      `docker build -t crop-prediction -f docker/Dockerfile .`\n    \n  2. To Run:<br />\n      `docker run -d --rm -p 8000:8000 --name crop-prediction crop-prediction`\n\n## Installation\n  1. Install required packages <br />\n      `pip3 install -r requirements.txt`\n\n  2. Download models <br />\n      `python3 download_models.py`\n\n  3. Run Server <br />\n      `python3 app.py`\n\n<br><br>\n\n> For more implementation details, please read the report at [github.com/SaiHemanthBR/Kushagra-Report](https://github.com/SaiHemanthBR/Kushagra-Report)\n\n## Contributers\n  * [SaiHemanthBR](https://github.com/SaiHemanthBR/)"
+                "text": "# Kushagra - AI-powered Mobile App - Inference Server\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the Inference Server that performs image classification on images captured by the user.\n\nMain Project Repo: [https://github.com/bshreddy/Kushagra](https://github.com/bshreddy/Kushagra)\n\n## Endpoints\n  * [POST] `/crop` - classifies image into one of 10 crop classes. <br>\n    ```Content-Type: multipart/form-data```\n    \n    Query Parameters <br>\n    |Parameter|Description|Type|\n    |---------|-----------|----|\n    |img|Image of the crop that needs to be classfied.|Image File|\n    \n    <br>\n\n    Response Object <br>\n    |Object|Data Type|Description|\n    |------|---------|-----------|\n    |pred|integer|Index of Predicted Class. (Index of largest element in `cnf` array.)|\n    |cnf|array[double]|Confidence of prediction for each index. values of Softmax of last layer of the ResNet model.|\n    |kind|string|Value: `\"crop\"`<br>Kind of prediction. (crop\\|disease)|\n\n\n    <br><br>\n\n  * [POST] `/disease` - classifies image into one of 37 crop diseases. <br>\n    ```Content-Type: multipart/form-data```\n    \n    Query Parameters <br>\n    |Parameter|Description|Type|\n    |---------|-----------|----|\n    |img|Image of the crop that needs to be classfied.|Image File|\n\n    <br>\n\n    Response Object <br>\n    |Object|Data Type|Description|\n    |------|---------|-----------|\n    |pred|integer|Index of Predicted Class. (Index of largest element in `cnf` array.)|\n    |cnf|array[double]|LogSoftmax values of last layer of the ResNet model.|\n    |kind|string|Value: `\"disease\"`<br>Kind of prediction. (crop\\|disease)|\n\n    <br><br>\n\n## Installation (Docker) (Recommended)\n  1. To Build: <br />\n      `docker build -t crop-prediction -f docker/Dockerfile .`\n    \n  2. To Run:<br />\n      `docker run -d --rm -p 8000:8000 --name crop-prediction crop-prediction`\n\n## Installation\n  1. Install required packages <br />\n      `pip3 install -r requirements.txt`\n\n  2. Download models <br />\n      `python3 download_models.py`\n\n  3. Run Server <br />\n      `python3 app.py`\n\n<br><br>\n\n> For more implementation details, please read the report at [github.com/bshreddy/Kushagra-Report](https://github.com/bshreddy/Kushagra-Report)\n\n## Contributers\n  * [bshreddy](https://github.com/bshreddy/)"
             },
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Kushagra-AI"
+            "url": "https://github.com/bshreddy/Kushagra-AI"
         },
         {
             "__typename": "Repository",
@@ -314,17 +314,17 @@
             },
             "licenseInfo": null,
             "name": "Kushagra-Android",
-            "nameWithOwner": "SaiHemanthBR/Kushagra-Android",
+            "nameWithOwner": "bshreddy/Kushagra-Android",
             "readme": {
                 "__typename": "Blob",
-                "text": "# Kushagra - AI-powered Mobile App - Android App\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the Android Mobile App developed in this project.\n\nMain Project Repo: [https://github.com/SaiHemanthBR/Kushagra](https://github.com/SaiHemanthBR/Kushagra)\n\n<!-- ## Screenshots -->\n<!-- Added Screenshots here -->\n\n> For more implementation details, please read the report at [github.com/SaiHemanthBR/Kushagra-Report](https://github.com/SaiHemanthBR/Kushagra-Report)\n\n<br><br>\n\n## Contributers\n  * [SaiHemanthBR](https://github.com/SaiHemanthBR/)\n  * [nikhiltadikonda](https://github.com/nikhiltadikonda/)\n  * [Kalyan1999](https://github.com/Kalyan1999/)"
+                "text": "# Kushagra - AI-powered Mobile App - Android App\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the Android Mobile App developed in this project.\n\nMain Project Repo: [https://github.com/bshreddy/Kushagra](https://github.com/bshreddy/Kushagra)\n\n<!-- ## Screenshots -->\n<!-- Added Screenshots here -->\n\n> For more implementation details, please read the report at [github.com/bshreddy/Kushagra-Report](https://github.com/bshreddy/Kushagra-Report)\n\n<br><br>\n\n## Contributers\n  * [bshreddy](https://github.com/bshreddy/)\n  * [nikhiltadikonda](https://github.com/nikhiltadikonda/)\n  * [Kalyan1999](https://github.com/Kalyan1999/)"
             },
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Kushagra-Android"
+            "url": "https://github.com/bshreddy/Kushagra-Android"
         },
         {
             "__typename": "Repository",
@@ -374,17 +374,17 @@
             },
             "licenseInfo": null,
             "name": "Kushagra-iOS",
-            "nameWithOwner": "SaiHemanthBR/Kushagra-iOS",
+            "nameWithOwner": "bshreddy/Kushagra-iOS",
             "readme": {
                 "__typename": "Blob",
-                "text": "# Kushagra - AI-powered Mobile App - iOS App\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the iOS/iPadOS App developed in this project.\n\nMain Project Repo: [https://github.com/SaiHemanthBR/Kushagra](https://github.com/SaiHemanthBR/Kushagra)\n\n<!-- ## Screenshots -->\n<!-- Added Screenshots here -->\n\n<br><br>\n\n> For more implementation details, please read the report at [github.com/SaiHemanthBR/Kushagra-Report](https://github.com/SaiHemanthBR/Kushagra-Report)\n\n## Contributers\n  * [SaiHemanthBR](https://github.com/SaiHemanthBR/)"
+                "text": "# Kushagra - AI-powered Mobile App - iOS App\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the iOS/iPadOS App developed in this project.\n\nMain Project Repo: [https://github.com/bshreddy/Kushagra](https://github.com/bshreddy/Kushagra)\n\n<!-- ## Screenshots -->\n<!-- Added Screenshots here -->\n\n<br><br>\n\n> For more implementation details, please read the report at [github.com/bshreddy/Kushagra-Report](https://github.com/bshreddy/Kushagra-Report)\n\n## Contributers\n  * [bshreddy](https://github.com/bshreddy/)"
             },
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Kushagra-iOS"
+            "url": "https://github.com/bshreddy/Kushagra-iOS"
         },
         {
             "__typename": "Repository",
@@ -414,17 +414,17 @@
             },
             "licenseInfo": null,
             "name": "Kushagra-Report",
-            "nameWithOwner": "SaiHemanthBR/Kushagra-Report",
+            "nameWithOwner": "bshreddy/Kushagra-Report",
             "readme": {
                 "__typename": "Blob",
-                "text": "# Kushagra - AI-powered Mobile App - Report\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the academic report that was submited with this project.\n\nMain Project Repo: [https://github.com/SaiHemanthBR/Kushagra](https://github.com/SaiHemanthBR/Kushagra)\n\n<br><br>\n\n## Contributers\n  * [SaiHemanthBR](https://github.com/SaiHemanthBR/)\n  * [nikhiltadikonda](https://github.com/nikhiltadikonda/)\n  * [Kalyan1999](https://github.com/Kalyan1999/)"
+                "text": "# Kushagra - AI-powered Mobile App - Report\n\nAn AI-powered mobile crop advisory app for farmers, gardeners that can provide information about crops using an image taken by the user. This supports 10 crops and 37 kinds of crop diseases. The AI model is a ResNet network that has been fine-tuned using crop images that were collected by web-scraping from Google Images and Plant-Village Dataset.\n\nThis repository is the academic report that was submited with this project.\n\nMain Project Repo: [https://github.com/bshreddy/Kushagra](https://github.com/bshreddy/Kushagra)\n\n<br><br>\n\n## Contributers\n  * [bshreddy](https://github.com/bshreddy/)\n  * [nikhiltadikonda](https://github.com/nikhiltadikonda/)\n  * [Kalyan1999](https://github.com/Kalyan1999/)"
             },
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Kushagra-Report"
+            "url": "https://github.com/bshreddy/Kushagra-Report"
         },
         {
             "__typename": "Repository",
@@ -474,7 +474,7 @@
             },
             "licenseInfo": null,
             "name": "PhysicsSims",
-            "nameWithOwner": "SaiHemanthBR/PhysicsSims",
+            "nameWithOwner": "bshreddy/PhysicsSims",
             "readme": {
                 "__typename": "Blob",
                 "text": "# Physics Simulations\n\n  * Motion in 1D\n    * Ball in Free Fall -- ✅\n    * Landing a rocket\n    * Relative velocity: race on a moving sidewalk\n  \n  * Motion in 2D\n    * Race between a dropped ball and one launched horizontally\n    * A ballistics cart\n    * Projectile Motion \n    * The monkey and the hunter\n    * Motion with Constant Acceleration\n  \n  * Forces\n    * Force and motion in 1D\n    * The normal force\n    * Static friction\n    * Elevator physics\n    * Atwood's machine\n    * Force and motion in 1D, with friction\n    * Friction on an incline\n  \n  * Circular motion\n    * Circular motion\n    * A ball on a string\n    * A disk on a turntable\n    * Gravitron (carnival ride model)\n    * Car on a banked turn\n\n  * Harmonic Motion\n    * Pendulum -- ✅\n    * Double Pendulum -- ✅\n    * Spring Pendulum -- ✅\n    * Pendulum - with Damping -- ✅\n    * Spring Wave\n  \n  * Experiments\n    * Havana Song Synth -- ✅\n  \n  * Renderings\n    * Mandelbrot Set -- Pan & Zoom remaining"
@@ -484,7 +484,7 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/PhysicsSims"
+            "url": "https://github.com/bshreddy/PhysicsSims"
         },
         {
             "__typename": "Repository",
@@ -524,7 +524,7 @@
             },
             "licenseInfo": null,
             "name": "SkyRegion",
-            "nameWithOwner": "SaiHemanthBR/SkyRegion",
+            "nameWithOwner": "bshreddy/SkyRegion",
             "readme": {
                 "__typename": "Blob",
                 "text": "# Sky Region AI Inference Server on Flask\n\n  SkyRegion is an Image Segmentation Model, created by fine-tuning Mask R-CNN, which generates a mask for a given image. This repo is the Inference Server that can be used by Web Apps or Mobile Apps.\n\n  * ### Example Input:\n    <img src=\"images/input-1.png\" width=\"50%\" />\n\n  * ### Output and Composite Image:\n    <img src=\"images/mask-1.png\" width=\"45%\" /> &nbsp;&nbsp;&nbsp;\n    <img src=\"images/composite-1.png\" width=\"45%\" />\n    <br /> <br />\n\n    Composite generated by applying a blur effect using the mask. This makes it easier for the user to understand what's happening.\n\n  * Server IP: `<your-computer-ip>:8001`\n\n  * ## Installation\n    \n    * Install required packages <br />\n      `pip3 install -r requirements.txt`\n\n    * Download models <br />\n      `python3 download_models.py`\n\n    * Run Server <br />\n      `python3 app.py`\n\n  * ## Installation (Docker) (Recommended)\n\n    * To Build: <br />\n      `docker build -t sky-region -f docker/Dockerfile .`\n    \n    * To Run:<br />\n      `docker run -d --rm -p 8001:8000 --name sky-region sky-region`\n"
@@ -534,7 +534,7 @@
                 "nodes": []
             },
             "stargazerCount": 4,
-            "url": "https://github.com/SaiHemanthBR/SkyRegion"
+            "url": "https://github.com/bshreddy/SkyRegion"
         },
         {
             "__typename": "Repository",
@@ -574,7 +574,7 @@
             },
             "licenseInfo": null,
             "name": "TextClassifier-FlaskWebApp",
-            "nameWithOwner": "SaiHemanthBR/TextClassifier-FlaskWebApp",
+            "nameWithOwner": "bshreddy/TextClassifier-FlaskWebApp",
             "readme": null,
             "repositoryTopics": {
                 "__typename": "RepositoryTopicConnection",
@@ -614,7 +614,7 @@
                 ]
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/TextClassifier-FlaskWebApp"
+            "url": "https://github.com/bshreddy/TextClassifier-FlaskWebApp"
         },
         {
             "__typename": "Repository",
@@ -654,7 +654,7 @@
             },
             "licenseInfo": null,
             "name": "Todo-ReactNative",
-            "nameWithOwner": "SaiHemanthBR/Todo-ReactNative",
+            "nameWithOwner": "bshreddy/Todo-ReactNative",
             "readme": {
                 "__typename": "Blob",
                 "text": "# Todo app\n\nA Simple Todo App made to teach myself Expo & ReactNative"
@@ -664,7 +664,7 @@
                 "nodes": []
             },
             "stargazerCount": 1,
-            "url": "https://github.com/SaiHemanthBR/Todo-ReactNative"
+            "url": "https://github.com/bshreddy/Todo-ReactNative"
         }
     ]
 }

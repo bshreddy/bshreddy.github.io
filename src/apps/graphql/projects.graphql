@@ -1,5 +1,5 @@
 query GithubReposQuery {
-  user(login: "SaiHemanthBR") {
+  user(login: "bshreddy") {
     pinnedItems(first: 10, types: [REPOSITORY, GIST]) {
       edges {
         node {

@@ -1,27 +1,21 @@
 [
     {
-        "id": "0",
-        "name": "Email",
-        "filename": "envelope-mark.svg",
-        "link": "mailto:sh.bheemreddy@gmail.com"
-    },
-    {
         "id": "1",
         "name": "GitHub",
         "filename": "github-mark.svg",
-        "link": "https://github.com/SaiHemanthBR"
+        "link": "https://github.com/bshreddy"
     },
     {
         "id": "2",
         "name": "LinkedIn",
         "filename": "linkedin-mark.svg",
-        "link": "https://www.linkedin.com/in/saihemanthbr/"
+        "link": "https://www.linkedin.com/in/bshreddy/"
     },
     {
         "id": "3",
         "name": "Instagram",
         "filename": "instagram-mark.svg",
-        "link": "https://www.instagram.com/saihemanthbr/"
+        "link": "https://www.instagram.com/bshreddy/"
     },
     {
         "id": "4",
